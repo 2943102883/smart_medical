@@ -13,6 +13,12 @@
 
 
 
+## 系统结构
+
+![系统结构](https://raw.githubusercontent.com/2943102883/smart_medical/main/imgs/%E7%B3%BB%E7%BB%9F%E7%BB%93%E6%9E%84.png)
+
+> 结构很简单，大概画个图方便大家修改
+
 ## 安装
 
 此智能药箱分为前端、后端和硬件。具体的安装各个部分会有详细的步骤

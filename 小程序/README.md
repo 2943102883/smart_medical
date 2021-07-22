@@ -8,6 +8,14 @@
 
 > 小程序内的API截止到发布为止依旧有效，不定时会将服务器关闭。有需要可以到后端的界面部署自己的后端
 
+
+
+## 流程图
+
+![流程图](https://raw.githubusercontent.com/2943102883/smart_medical/main/imgs/%E8%BD%AF%E4%BB%B6%E8%AE%BE%E8%AE%A1.png)
+
+> 前面都画了张图，这里也就象征性的来一张。后端那里就不画了，有点复杂懒得画了
+
 ## 使用截图
 
 ![主页](https://raw.githubusercontent.com/2943102883/smart_medical/ff697d9b626ea96779aef98e5bf850764ee45411/imgs/%E4%B8%BB%E9%A1%B5.png)
