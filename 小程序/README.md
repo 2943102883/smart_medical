@@ -1,0 +1,22 @@
+# 小程序部分
+
+## 安装
+
+下载`微信开发者工具`并导入demo文件夹。
+
+静等项目编译完成即可使用
+
+> 小程序内的API截止到发布为止依旧有效，不定时会将服务器关闭。有需要可以到后端的界面部署自己的后端
+
+## 使用截图
+
+![主页](D:\my_project\my_smart_medical\imgs\主页.png)
+
+![个人中心](D:\my_project\my_smart_medical\imgs\个人中心.png)
+
+![过期提醒](D:\my_project\my_smart_medical\imgs\提醒.png)
+
+![药品搜索](D:\my_project\my_smart_medical\imgs\药品搜索.png)
+
+![药品管理](D:\my_project\my_smart_medical\imgs\药品管理.png)
+
