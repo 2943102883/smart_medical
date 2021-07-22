@@ -1,0 +1,13 @@
+{"usingComponents": {
+  "mp-cell":"/miniprogram_npm/weui-miniprogram/cell/cell",
+  "mp-icon": "/miniprogram_npm/weui-miniprogram/icon/icon",
+  "mp-toptips": "/miniprogram_npm/weui-miniprogram/toptips/toptips",
+  "mp-cells": "/miniprogram_npm/weui-miniprogram/cells/cells",
+  "mp-checkbox": "/miniprogram_npm/weui-miniprogram/checkbox/checkbox",
+  "mp-checkbox-group": "/miniprogram_npm/weui-miniprogram/checkbox-group/checkbox-group",
+  "mp-form": "/miniprogram_npm/weui-miniprogram/form/form",
+  "mp-form-page": "/miniprogram_npm/weui-miniprogram/form-page/form-page"
+},
+"navigationBarTextStyle":"white",
+"navigationBarTitleText":"个人信息"
+}

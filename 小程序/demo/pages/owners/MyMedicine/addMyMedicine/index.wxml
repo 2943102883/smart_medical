@@ -1,0 +1,80 @@
+<view style="height: 1em;"></view>
+<form  bindsubmit="submit">
+    <van-transition show="{{ moveshow }}" custom-class="block" name="slide-right" duration="600">
+      <van-divider
+      customStyle="color: #ffffff;"
+     />
+      <view style="background-color: rgb(220,220,220,0.5);">
+      <van-cell-group title="药品全概" is-link>
+        <van-field name="name" value="{{ name }}" clearable label="药品名称" 
+        size="large" center="true" input-align="center" 
+        custom-style="margin-bottom:0.5em;" label-class="labelclass" />
+
+        <van-field name="category" value="{{ category }}" clearable label="药品类别" 
+        size="large" center="true"input-align="center" 
+        custom-style="margin-bottom:0.5em;" label-class="labelclass"/>
+  
+        <van-field name="introduce" value="{{ introduce }}" clearable label="药品简介" 
+        size="large" center="true" input-align="center" type="textarea" 
+        custom-style="margin-bottom:0.5em;" label-class="labelclass"/>
+      </van-cell-group>
+      </view>
+    </van-transition>
+
+      <van-divider
+     customStyle="color: #ffffff;"
+    />
+    <van-transition show="{{ moveshow }}" custom-class="block" name="slide-left" duration="600">
+      <view style="background-color: rgb(220,220,220,0.5);">
+        <van-cell-group title="关于症状" is-link>
+        <van-field name="suit" value="{{ suit }}" clearable label="适应症状" 
+        size="large" center="true" input-align="center" type="textarea"   autosize 
+        label-class="labelclass" custom-style="margin-bottom:0.5em;"/>
+        <van-field name="bad" value="{{ bad }}" clearable label="不良反应" 
+        size="large" center="true" input-align="center" type="textarea"  autosize 
+        label-class="labelclass" custom-style="margin-bottom:0.5em;"/>
+      </van-cell-group>
+      </view>
+    </van-transition>
+
+      <van-divider
+      customStyle="color: #ffffff; "
+     />
+
+     <van-transition show="{{ moveshow }}" custom-class="block" name="slide-right" duration="600">
+      <view style="background-color: rgb(220,220,220,0.5);">
+      <van-cell-group title="其他说明" is-link>
+        <van-field name="life" value="{{ life }}" clearable label="保质期(月)" 
+        size="large" center="true" input-align="center" bind:blur="note" required label-class="labelclass" 
+        custom-style="margin-bottom:0.5em;"/>
+        <van-field name="use" value="{{ use }}" clearable label="使用方法" 
+        size="large" center="true" input-align="center" type="textarea" label-class="labelclass" 
+        custom-style="margin-bottom:0.5em;"/>
+        <van-field name="taboo" value="{{ taboo }}" clearable label="禁忌" 
+        size="large" center="true" input-align="center" type="textarea" label-class="labelclass" 
+        custom-style="margin-bottom:0.5em;"/>
+        <van-field name="heed" value="{{ heed }}" clearable label="注意事项" 
+        size="large" center="true" input-align="center" type="textarea" label-class="labelclass" 
+        custom-style="margin-bottom:0.5em;"/>
+        <van-field name="savemethod" value="{{ savemethod }}" clearable label="保存方法" 
+        size="large" center="true" input-align="center" type="textarea" label-class="labelclass" 
+        custom-style="margin-bottom:0.5em;"/>
+      </van-cell-group>
+    </view>
+    <van-cell-group title="药品照片" is-link>
+      <van-uploader file-list="{{ fileList }}" bind:delete="deletepic" bind:after-read="afterRead" 
+      max-count="{{maxcount}}" multiple="{{true}}" deletable="{{ true }}" style="margin-left: 1em;"/>
+    </van-cell-group>
+    <van-divider
+    customStyle="color: #ffffff;"
+   />
+   
+    </van-transition>
+    <van-transition show="{{ moveshow }}" custom-class="block">
+      <van-button type="primary" style="margin: 2em;" name="slide-left" block formType="submit"
+        color="rgb(255,99,71,0.8)">提交</van-button>
+    </van-transition>
+  </form>
+
+  <van-toast id="van-toast" />
+  <van-notify id="van-notify" />

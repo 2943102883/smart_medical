@@ -1,0 +1,5 @@
+<mp-cell link url="{{item.url}}" hover value="{{item.name}}" wx:for="{{setdata}}" wx:key="name">
+</mp-cell>
+<view class="btn-area">
+<button type="warn">退出登录</button>
+</view>

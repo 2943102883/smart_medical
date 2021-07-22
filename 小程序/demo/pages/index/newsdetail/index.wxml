@@ -1,0 +1,11 @@
+<view class="text">详情</view>
+
+    <view style="text-align: center; margin: 1em;">{{detail.detail.author_name}}</view>
+    <view style="text-align: center;">{{detail.detail.title}}</view>
+    <van-divider contentPosition="center" borderColor="rgb(255,99,71,0.8)"/>
+
+    <van-panel title="" desc="{{detail.detail.caregory}}" status="{{detail.detail.date}}">
+        <rich-text nodes="{{detail.content}}"></rich-text>
+      </van-panel>
+
+    

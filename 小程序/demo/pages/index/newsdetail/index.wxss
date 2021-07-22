@@ -1,0 +1,13 @@
+.text{
+    height: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:rgb(255,99,71,0.7);
+    color: #ffffff;
+}
+
+/* .webview{
+    height: 10em;
+    overflow: scroll;
+} */

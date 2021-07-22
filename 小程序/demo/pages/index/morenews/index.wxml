@@ -1,0 +1,12 @@
+<view>
+    <van-grid gutter="{{ 5 }}" column-num="1"  class="list">
+    <van-grid-item use-slot wx:for="{{ newslist }}" wx:for-item="itemName">
+        <van-card  title="{{itemName.title}}" 
+      tag="{{itemName.author_name}}"
+      desc="{{itemName.date}}"
+          class="pic" bindtap="detail" data-src="{{itemName.uniquekey}}"
+          thumb="{{itemName.thumbnail_pic_s}}" />
+    </van-grid-item>
+  </van-grid>
+  </view>
+

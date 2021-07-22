@@ -1,0 +1,7 @@
+.container{ padding: 0 26rpx; box-sizing: border-box;}
+@keyframes flash{
+  0%,50%,100%{opacity:1 ;}
+  25%{opacity: 0;}
+}
+
+@import "/miniprogram_npm/weui-miniprogram/weui-wxss/dist/style/weui.wxss"

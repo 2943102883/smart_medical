@@ -1,0 +1,46 @@
+
+<van-row>
+<van-col span="3" style="position: fixed; overflow: scroll; height: 50em;">
+<van-sidebar active-key="{{ activeKey }}" bind:change="tabchage">
+    <van-sidebar-item title="清热药" />
+    <van-sidebar-item title="止血药" />
+    <van-sidebar-item title="解表药" />
+    <van-sidebar-item title="泻下药" />
+    <van-sidebar-item title="补虚药" />
+    <van-sidebar-item title="安神药" />
+    <van-sidebar-item title="芳香化湿药" />
+    <van-sidebar-item title="利水渗湿药" />
+    <van-sidebar-item title="温里药" />
+    <van-sidebar-item title="理气药" />
+    <van-sidebar-item title="消食药" />
+</van-sidebar>
+</van-col>
+
+<van-col span="19" offset="5">
+<van-grid gutter="{{ 10 }}" column-num="1">
+    <view wx:if="{{activeKey == '0'}}" class="list">
+        <van-grid-item use-slot wx:for="{{ one }}" wx:for-item="itemName">
+            <van-card  title="{{itemName.name}}" 
+                class="pic" bindtap="detail"
+                thumb="{{itemName.image}}" />
+        </van-grid-item>
+    </view>
+    <view wx:if="{{activeKey == '1'}}" class="list">
+        <van-grid-item use-slot wx:for="{{ two }}" wx:for-item="itemName">
+            <van-card  title="{{itemName.name}}" 
+                class="pic" bindtap="detail"
+                thumb="{{itemName.image}}" />
+        </van-grid-item>
+    </view>
+    <view wx:if="{{activeKey == '2'}}" class="list">
+        <van-grid-item use-slot wx:for="{{ three }}" wx:for-item="itemName">
+            <van-card  title="{{itemName.name}}" 
+                class="pic" bindtap="detail"
+                thumb="{{itemName.image}}" />
+        </van-grid-item>
+    </view>
+</van-grid>
+</van-col>
+
+
+</van-row>

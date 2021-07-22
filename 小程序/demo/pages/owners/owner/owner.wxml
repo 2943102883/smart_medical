@@ -1,0 +1,89 @@
+<!--pages/owner/owner.wxml--> 
+<view class="nofiy" hidden="{{nofiyshow}}">
+ 恰药倒计时:
+  <van-count-down time="{{ currentDate }}" />
+</view>
+<van-popup show="{{ show }}"
+position="bottom"
+custom-style="height: 20%;">
+  <view class="wrapper">
+ 
+    <block wx:if="{{!hasUserInfo}}">
+      <button wx:if="{{canIUseGetUserProfile}}" bindtap="getUserProfile"> 获取头像昵称 </button>
+      <button wx:else open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    </block>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  
+  </view>
+</van-popup>
+
+<view>
+  <van-transition name="slide-left">
+   <van-row style="padding: 2em;">
+    <van-col span="8" offset="1">
+        <van-image
+        round
+        width="4rem"
+        height="4rem"
+        src="{{userInfo.avatarUrl}}"
+      />
+    </van-col>
+    <van-col span="12">{{userInfo.nickName}}</van-col>
+    <van-col span="3"><van-icon name="arrow" bindtap = "detial"/></van-col>
+  </van-row>
+  </van-transition>
+</view>
+<van-transition name="slide-right">
+<van-grid>
+    <van-grid-item icon="like-o" text="收藏" bindtap = "love"/>
+    <van-grid-item icon="notes-o" text="我的药物" bindtap = "car" url ="../MyMedicine/index"/>
+    <van-grid-item icon="bulb-o" text="应急联系人" />
+    <van-grid-item icon="scan" text="扫码" />
+  </van-grid>
+</van-transition>
+  <van-collapse
+  value="{{ activeNames }}"
+  bind:change="onChange"
+  bind:open="onOpen"
+  bind:close="onClose"
+  >
+<van-collapse-item title="我的药箱" name="1" style="background-color: aqua;">
+    <!-- <myMedChest></myMedChest> -->
+    <van-collapse value="{{ activeNames }}" bind:change="onChange">
+      <van-transition name="slide-up">
+        <view wx:if="{{deviceConnected}}">
+         
+        <van-cell title="MQTT连接服务器"  value="设备已经连接" center="true"></van-cell>
+        </view>
+        <view wx:else>
+        <van-cell title="MQTT连接服务器"  value="设备还未连接" center="true"></van-cell>
+        </view>
+        <van-cell title="温度" icon="points" value="{{wendudata}}" center="true"/>
+  
+        <van-cell title="湿度" icon="bar-chart-o" value="{{shidudata}}" center="true"/> 
+        <!-- <van-cell title="风扇" >
+
+           <van-switch checked="{{ Dynamochecked }}" bind:change="fengchange"  active-color="rgb(255,99,71,0.8)"
+           size="24px"/> 
+        </van-cell> -->
+  
+        <van-cell title="药箱门">
+          <switch bindchange='doorchange'></switch>
+          <!-- <van-button  slot="right-icon" color="rgb(255,99,71,0.8)" plain  bindtap ="doorchange" size="mini" custom-class="button">箱门开关</van-button> -->
+          <!-- <van-switch checked="{{ numberonedoor }}" bind:change="doorchange"  active-color="rgb(255,99,71,0.8)"
+           size="24px"/> -->
+        </van-cell>
+        <!-- <van-cell title="信号灯">
+          <van-switch checked="{{ numberonelight }}" bind:change="ledchange"  active-color="rgb(255,99,71,0.8)"
+           size="24px"/>
+        </van-cell> -->
+  
+      </van-transition> 
+   </van-collapse>
+    </van-collapse-item>
+ </van-collapse>
+ <van-notify id="van-notify" />
+  

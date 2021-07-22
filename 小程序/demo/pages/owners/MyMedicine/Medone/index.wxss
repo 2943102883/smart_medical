@@ -1,0 +1,58 @@
+.text{
+    height: 5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:rgb(255,99,71,0.7);
+    color: #ffffff;
+}
+.panel{
+    width: 10em;
+    height: 10em;
+    
+}
+.pic{
+    width: 100%;
+    background-color: #4e72b8;
+}
+
+.delete {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+  } 
+  .custom-class {
+    margin-left: 10px;
+  }
+  
+  .van-checkbox__icon-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+.stepper-slot {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+} 
+.van-swipe-cell__right {
+    display: inline-block;
+    width: 65px;
+    height: 40em;
+    font-size: 15px;
+    line-height: 44px;
+    color: #fff;
+    text-align: center;
+    background-color: #f44;
+  } 
+  .van-swipe-cell__left {
+    display: inline-block;
+    width: 65px;
+    height: 40em;
+    font-size: 15px;
+    line-height: 44px;
+    color: #fff;
+    text-align: center;
+    background-color: rgba(174, 171, 171, 0.639);
+  } 

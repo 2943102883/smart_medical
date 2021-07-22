@@ -1,0 +1,73 @@
+<view wx:if="{{name != '' }}">
+  <view class="text">药品详情</view>
+    <view style="text-align: center; margin: 1em;">{{detail.name}}</view>
+    <view style="text-align: center;">{{detail.lelment}}</view>
+
+    <van-divider contentPosition="center" borderColor="rgb(255,99,71,0.8)"/>
+
+   
+        <van-cell-group title="【药物简介】">
+            <van-cell title="保存方法" value="{{detail.savemethod}}" />
+            <view style="margin-left: 1em; margin-right: 1em;">{{detail.suit}}</view>
+          </van-cell-group>
+         
+
+    <van-divider contentPosition="center" borderColor="rgb(255,99,71,0.8)"/>
+    
+  
+    <van-cell-group title="【注意事项】" >
+       <view wx:for="{{ detail.bad }}" wx:index="index" wx:for-item="itemName">
+        <view style="margin-left: 1em; margin-right: 1em;">{{itemName}}</view>
+    </view>
+   </van-cell-group>
+   <van-divider contentPosition="center" borderColor="rgb(255,99,71,0.8)"/>
+
+
+    
+
+   
+        <van-cell-group title="【不适用者】" >
+            <view wx:for="{{ detail.err }}" wx:index="index" wx:for-item="itemName">
+             <view style="margin-left: 1em; margin-right: 1em;">{{itemName}}</view>
+            </view>
+         </van-cell-group>
+         <van-divider contentPosition="center" borderColor="rgb(255,99,71,0.8)"/>
+  
+    
+
+   
+
+     <van-cell-group title="【使用方法】">
+        <view wx:for="{{ detail.usemethod }}" wx:index="index" wx:for-item="itemName">
+            <view style="margin-left: 1em; margin-right: 1em;">{{itemName}}</view>
+        </view>
+         </van-cell-group>
+       
+         <van-toast id="van-toast" />
+    
+    
+        </view>
+        <view wx:else>
+            <view class="text">详情</view>
+            <view style="text-align: center; margin: 1em;">{{medname}}</view>
+            
+            <van-divider contentPosition="center" borderColor="rgb(255,99,71,0.8)"/>
+          
+            <van-cell-group title="【药物简介】">
+                <van-cell title="保存方法" value="{{savemethod}}" />
+                <view style="margin-left: 1em; margin-right: 1em;">{{suit}}</view>
+              </van-cell-group>
+              <van-divider contentPosition="center" borderColor="rgb(255,99,71,0.8)"/>
+              <van-cell-group title="【不适用者】" >
+              
+                 <view style="margin-left: 1em; margin-right: 1em;">{{err}}</view>
+                
+             </van-cell-group>
+             <van-divider contentPosition="center" borderColor="rgb(255,99,71,0.8)"/>
+             <van-cell-group title="【注意事项】" >
+              
+                <view style="margin-left: 1em; margin-right: 1em;">{{bad}}</view>
+               
+            </van-cell-group>
+        </view>
+

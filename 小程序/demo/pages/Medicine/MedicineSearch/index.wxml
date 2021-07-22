@@ -1,0 +1,18 @@
+<van-sticky> 
+    <van-search value="{{ value }}" placeholder="请输入搜索关键词" show-action bind:search="onSearch" bind:cancel="onCancel" />
+  </van-sticky>
+
+  <view wx:if="{{list}}">
+    <van-grid gutter="{{ 5 }}" column-num="1"  class="list">
+      <van-grid-item use-slot wx:for="{{ list }}" wx:index="index" wx:for-item="itemName">
+          <van-card  title="{{itemName.name}}" 
+            class="pic" bindtap="detail" data-num="{{itemName.num}}" data-name="{{name}}"
+            thumb="{{itemName.img_url}}" />  
+      </van-grid-item>
+    </van-grid>
+  </view>
+  <view wx:else>
+    <van-empty image="search" description="若长时间无反馈请重新搜索" />
+  </view>
+
+  <van-toast id="van-toast" />

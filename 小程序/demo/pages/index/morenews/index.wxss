@@ -1,0 +1,17 @@
+.text{
+    height: 5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:rgb(255,99,71,0.7);
+    color: #ffffff;
+}
+.panel{
+    width: 10em;
+    height: 10em;
+    
+}
+.pic{
+    width: 100%;
+    background-color: #4e72b8;
+}

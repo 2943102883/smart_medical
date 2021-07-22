@@ -1,0 +1,22 @@
+<view>
+    
+    <van-grid gutter="{{ 5 }}" column-num="1"  class="list">
+       
+    <van-grid-item use-slot wx:for="{{ list }}"  wx:for-item="itemName">
+        <!-- <van-card  title="{{itemName.title}}" 
+      tag="{{itemName.author_name}}"
+      desc="{{itemName.date}}"
+          class="pic" bindtap="detail" data-src="{{itemName.uniquekey}}"
+          thumb="{{itemName.thumbnail_pic_s}}" /> -->
+          <van-swipe-cell right-width="{{ 65 }}" left-width="{{ 65 }}"  class="pic">
+            <view slot="left" class="delete" bindtap = "change" data-name="{{itemName[0].name}}" class="van-swipe-cell__left">修改</view>
+          <van-card title="{{itemName[0].name}}"  desc="{{itemName[0].category}}"></van-card>
+          <view slot="right" class="delete" bindtap = "delete" data-name="{{itemName[0].name}}" class="van-swipe-cell__right">删除</view>
+        </van-swipe-cell>
+    </van-grid-item>
+
+
+  </van-grid>
+  <van-dialog id="van-dialog" />
+  </view>
+

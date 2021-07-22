@@ -1,0 +1,11 @@
+
+<van-cell-group>
+    <van-cell  title="姓名" value="{{name}}" bindtap = "load" size="large"/>
+    <van-cell title="性别" value="{{sex}}" bindtap = "load" size="large"/>
+    <van-cell title="年龄" value="{{age}}" bindtap = "load" size="large"/>
+    <van-cell title="身高" value="{{height}}" bindtap = "load" size="large"/>
+    <van-cell title="体重" value="{{weight}}" bindtap = "load" size="large"/>
+    <van-cell title="联系方式" value="{{telephone}}" bindtap = "load" size="large"/>
+    <van-cell title="紧急联系人" value="{{contacts}}" bindtap = "load"  size="large"/>
+    <van-cell title="健康状况" value="{{health}}" />
+  </van-cell-group>

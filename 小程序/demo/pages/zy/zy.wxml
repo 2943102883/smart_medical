@@ -1,0 +1,5 @@
+<van-sidebar active-key="{{ activeKey }}"  bind:change="tabchage">
+  <van-sidebar-item title="标签名" />
+  <van-sidebar-item title="标签名" />
+  <van-sidebar-item title="标签名" />
+</van-sidebar>

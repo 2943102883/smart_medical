@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "Medone":"/pages/owners/MyMedicine/Medone/index"
+  }
+}

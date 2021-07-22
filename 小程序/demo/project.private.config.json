@@ -1,0 +1,35 @@
+{
+  "setting": {},
+  "condition": {
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "name": "pages/zy/zy",
+          "pathName": "pages/zy/zy",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "1",
+          "pathName": "pages/owner/owner",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/owner/owner",
+          "pathName": "pages/owner/owner",
+          "scene": null
+        }
+      ]
+    }
+  }
+}

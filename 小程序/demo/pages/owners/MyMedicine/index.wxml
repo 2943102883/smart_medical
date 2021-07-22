@@ -1,0 +1,67 @@
+<view style="background-color:rgb(255,99,71,0.4); height: 7em; margin-top: 0.5em; margin-bottom: 2em;">
+  <view style="background-color:rgb(255,99,71,0.1); height: 2em; width: 100em;" ></view>
+<van-grid column-num="2" border="true" gutter="{{ 10 }}">
+  <van-grid-item  square="true" icon="send-gift-o" icon-color="rgb(255,99,71,0.8)" text="添加药品" bindtap ="addMyMedicine">
+  </van-grid-item>
+    <view wx:if="{{choosebuttonshow}}" >
+      <van-grid-item  square="true" icon="todo-list-o" icon-color="rgb(255,99,71,0.8)" text="设置时间" bindtap = "chooseTime">
+      </van-grid-item>
+     </view>
+     <view wx:else> 
+      <van-grid-item  square="true" icon="delete-o" icon-color="rgb(255,99,71,0.8)" text="取消时间" bindtap = "deleteTime">
+      </van-grid-item>
+    </view>
+</van-grid>
+
+<view hidden="{{countdownshow}}" class="countdown" >
+  
+  恰药倒计时:<van-count-down time="{{ currentDate }}" bind:finish="finished"/>
+
+</view>
+<!-- <view style="background-color:rgb(255,99,71,0.2); height: 0.5em; width: 100em; position: absolute; top:8em; z-index: -1;" ></view> -->
+</view>
+<!-- <van-row gutter="3">
+  <van-col span="12" >
+    <van-button size="small "round type="primary" block color="rgb(255,99,71,0.8)" style="margin: 2em;" bindtap = "addMyMedicine">添加药品</van-button>
+  </van-col>
+  <van-col span="12">
+  <view wx:if="{{choosebuttonshow}}">
+   <van-button size="small" round type="primary" block color="rgb(255,99,71,0.8)" style="margin: 2em;" bindtap="chooseTime" class="button" >设置时间</van-button>
+  </view>
+  <view wx:else> 
+      <van-button size="small" round type="primary" block color="rgb(255,99,71,0.8)" style="margin: 2em;" bindtap="deleteTime" class="button" >取消设置</van-button>
+  </view>
+</van-col>
+</van-row> -->
+
+
+
+<van-tabs type="card" color="rgb(255,99,71,0.8)" >
+    <van-tab title="药箱1"><Medone></Medone></van-tab>
+    <van-tab title="过期药">
+      <van-cell-group>
+     <view wx:for="{{theOutTimeMed}}"wx:for-index="idx" wx:for-item="item">
+          <van-cell title="{{item.name}}" value="{{item.msg}}" />
+      </view>
+    </van-cell-group>
+    </van-tab>
+  </van-tabs>
+
+    <van-popup
+  show="{{ show }}"
+  position="bottom"
+  custom-style="height: 50%;"
+  bind:close="onClose"
+>
+    <van-datetime-picker
+  type="time"
+  value="{{ currentDate }}"
+  min-hour="{{ minHour }}"
+  max-hour="{{ maxHour }}"
+  min-minute="{{ minMinute }}"
+  bind:confirm="onInput"
+  bind:cancel="onClose"
+/>
+</van-popup>
+
+

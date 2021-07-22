@@ -1,0 +1,105 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/zy/zy",
+    "pages/owners/owner/owner",
+    "pages/owners/my/my",
+    "pages/owners/mychange/change",
+    "pages/star/star",
+    "pages/setting/setting",
+    "pages/index/newsdetail/index",
+    "pages/owners/MyMedicine/Medone/index",
+    "pages/owners/MyMedicine/ChangeMyMed/index",
+    "pages/Medicine/Meddetail/index"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarTitleText": "智能小药箱",
+    "navigationBarTextStyle":"white"
+  },
+ 
+  "tabBar": {
+    "color": "#808080",
+    "selectedColor": "#FFFFFF",
+    "backgroundColor": "#000000",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath": "./pages/images/home1.png",
+      "selectedIconPath": "./pages/images/home2.png"
+    },{
+      "pagePath": "pages/owners/owner/owner",
+      "text": "个人",
+      "iconPath": "./pages/images/person1.png",
+      "selectedIconPath": "./pages/images/person2.png"
+    }
+  ]
+  },
+  "usingComponents": {
+    "van-overlay": "@vant/weapp/overlay/index",
+    "van-button": "@vant/weapp/button/index",
+    "van-uploader": "@vant/weapp/uploader/index",
+    "van-tab": "@vant/weapp/tab/index",
+    "van-tabs": "@vant/weapp/tabs/index",
+    "van-field": "@vant/weapp/field/index",
+    "van-radio": "@vant/weapp/radio/index",
+    "van-radio-group": "@vant/weapp/radio-group/index",
+    "van-datetime-picker": "@vant/weapp/datetime-picker/index",
+    "van-cell": "@vant/weapp/cell/index",
+    "van-popup": "@vant/weapp/popup/index",
+    "van-calendar": "@vant/weapp/calendar/index",
+    "van-checkbox": "@vant/weapp/checkbox/index",
+    "van-checkbox-group": "@vant/weapp/checkbox-group/index",
+    "van-picker": "@vant/weapp/picker/index",
+    "van-tabbar": "@vant/weapp/tabbar/index",
+    "van-tabbar-item": "@vant/weapp/tabbar-item/index",
+    "van-swipe-cell": "@vant/weapp/swipe-cell/index",
+    "van-cell-group": "@vant/weapp/cell-group/index",
+    "van-divider": "@vant/weapp/divider/index",
+    "van-row": "@vant/weapp/row/index",
+    "van-col": "@vant/weapp/col/index",
+    "van-icon": "@vant/weapp/icon/index",
+    "van-image": "@vant/weapp/image/index",
+    "van-collapse": "@vant/weapp/collapse/index",
+    "van-collapse-item": "@vant/weapp/collapse-item/index",
+    "van-circle": "@vant/weapp/circle/index",
+    "van-dropdown-menu": "@vant/weapp/dropdown-menu/index",
+    "van-dropdown-item": "@vant/weapp/dropdown-item/index",
+    "van-search": "@vant/weapp/search/index",
+    "van-tag": "@vant/weapp/tag/index",
+    "van-transition": "@vant/weapp/transition/index",
+    "van-switch": "@vant/weapp/switch/index",
+    "van-dialog": "@vant/weapp/dialog/index",
+    "van-toast": "@vant/weapp/toast/index",
+    "van-grid": "@vant/weapp/grid/index",
+  "van-grid-item": "@vant/weapp/grid-item/index",
+  "van-sticky": "@vant/weapp/sticky/index",
+  "van-card": "@vant/weapp/card/index",
+  "van-submit-bar": "@vant/weapp/submit-bar/index",
+  "van-goods-action": "@vant/weapp/goods-action/index",
+  "van-goods-action-icon": "@vant/weapp/goods-action-icon/index",
+  "van-goods-action-button": "@vant/weapp/goods-action-button/index",
+  "van-nav-bar": "@vant/weapp/nav-bar/index",
+  "van-action-sheet": "@vant/weapp/action-sheet/index",
+  "van-panel": "@vant/weapp/panel/index",
+  "van-share-sheet": "@vant/weapp/share-sheet/index",
+  "van-notify": "@vant/weapp/notify/index",
+  "van-empty": "@vant/weapp/empty/index",
+  "van-tree-select": "@vant/weapp/tree-select/index",
+  "van-stepper": "@vant/weapp/stepper/index",
+  "van-sidebar": "@vant/weapp/sidebar/index",
+  "van-sidebar-item": "@vant/weapp/sidebar-item/index",
+  "van-count-down": "@vant/weapp/count-down/index",
+  
+
+  "customtabbar": "custom-tab-bar/index"
+  },
+  
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+  
+  
+    }
+
+ 

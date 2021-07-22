@@ -1,0 +1,53 @@
+
+<van-panel>
+  <view class="text">智能医药箱</view>
+<van-sticky> 
+  <van-transition show="{{ show }}" custom-class="block" name="slide-right" duration="900">
+  <van-search
+  value="{{ value }}"
+  input-align="center"
+  placeholder="请输入搜索关键词"
+  shape="round"
+  use-action-slot
+  bind:tap="onTap"
+  background="rgb(255,99,71,0.7)"
+  />
+</van-transition>
+  </van-sticky>
+</van-panel>
+
+<!-- <van-divider
+  contentPosition="center"
+  customStyle="color: rgb(255,99,71,0.8); border-color: rgb(255,99,71); font-size: 18px;"
+ />
+
+ <van-transition show="{{ show }}" custom-class="block" name="slide-left" duration="900">
+<van-grid direction="horizontal" column-num="3">
+  <van-grid-item icon="/pages/images/Medicine (1).png" text="中药"  link-type="reLaunch" url="../Medicine/ChineseMedicine/index?id=1"/>
+  <van-grid-item icon="/pages/images/Medicine (2).png" text="西药" link-type="reLaunch" url="../Medicine/WestMedicine/index?id=1"/>
+  <van-grid-item icon="/pages/images/Medicine (3).png" text="生物药剂" />
+  <van-grid-item icon="/pages/images/Medicine (4).png" text="中成药" />
+  <van-grid-item icon="/pages/images/Medicine (5).png" text="其他药品" />
+</van-grid>
+</van-transition>
+<van-divider
+  contentPosition="center"
+  customStyle="color: rgb(255,99,71,0.8); border-color: rgb(255,99,71); font-size: 18px;"
+ /> -->
+
+<van-transition show="{{ show }}" custom-class="block" name="fade-up" duration="900">
+<van-cell title="医疗动态" icon="column" is-link value="更多" bindtap = "morenews"/>
+
+<view>
+  <van-grid gutter="{{ 5 }}" column-num="1"  class="list">
+  <van-grid-item use-slot wx:for="{{ newslist }}" wx:for-item="itemName">
+      <van-card  title="{{itemName.title}}" 
+      tag="{{itemName.author_name}}"
+      desc="{{itemName.date}}"
+          class="pic" bindtap="detail" data-src="{{itemName.uniquekey}}"
+          thumb="{{itemName.thumbnail_pic_s}}" />
+  </van-grid-item>
+</van-grid>
+</view>
+</van-transition>
+<van-notify id="van-notify" />

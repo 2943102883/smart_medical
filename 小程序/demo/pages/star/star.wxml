@@ -1,0 +1,39 @@
+<view class="page">
+    <view class="page__bd">
+        <mp-searchbar bindselectresult="selectResult" search="{{search}}"></mp-searchbar>
+    </view>
+</view>
+<!--分类下边的主盒子-->
+<view class="container">
+  <!--左边-->
+  <view class="nav_left">
+    <block wx:for="{{clotherItems}}" wx:key="id">
+      <!--用data-index记录这个数据在数组的下标位置，使用data-id设置每个item的id值，供打开2级页面使用-->
+      <view class="nav_left_items {{curNav == item.clother_id ? 'active' : ''}}" bindtap="switchRightTab" data-index="{{index}}" data-id="{{item.clother_id}}">{{item.clother_name}}</view>
+    </block>
+  </view>
+  <!--右边-->
+  <view class="nav_right">
+    <!--如果有数据，遍历一下-->
+    <view wx:if="{{clotherItems[curIndex].ishaveChild}}">
+      <block wx:for="{{clotherItems[curIndex].children}}" wx:key="id">
+        <view class="nav_right_items">
+        <!--关于跳转的话 我想的是点击图片后直接让跳到购物车里！！ 现在这里记下来-->
+           <navigator url="/pages/list/list">
+            <view class="imgclass">
+            <image src="{{item.image}}"></image>
+           </view>
+           <view class="textword">
+            <text>{{item.name}}</text>
+          </view>
+          <view class="textword">
+            <text>简介</text>
+          </view>
+           </navigator>
+        </view>
+      </block>
+    </view>
+    <!--如果没有数据，则给出这个提示-->
+    <view class="nodata_text" wx:else>该分类暂无商品</view>
+  </view>
+</view>

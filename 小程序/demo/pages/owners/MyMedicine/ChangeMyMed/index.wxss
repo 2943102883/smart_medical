@@ -1,0 +1,3 @@
+view .labelclass {
+    color:rgba(191, 61, 38, 0.85);
+}

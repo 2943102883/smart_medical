@@ -1,0 +1,16 @@
+.text{
+    height: 3em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:rgb(255,99,71,0.4);
+    color: #ffffff;
+}
+
+.background{
+    background-color:rgba(201, 198, 197, 0.401);
+}
+/* .webview{
+    height: 10em;
+    overflow: scroll;
+} */
