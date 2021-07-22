@@ -2,22 +2,20 @@
 
 
 
-# 后端服务器
+# 后端部分
 
 ![code](https://img.shields.io/badge/codecov-0%25-green)![build](https://img.shields.io/badge/build-django-red)![mode](https://img.shields.io/badge/mode-MVT-important)
 
 ## 主要功能：
 
 - 针对小程序的药品进行管理（完成）
-- 对传感器上传来的数据进行处理（待定）
+- 对传感器上传来的数据进行处理（完成）
 
 
 
 ## 安装
 
 使用django构建后端服务器，数据库使用mysql，数据来源于网络爬虫
-
-项目已经开始，已经完成了基础的功能，下一步则是与硬件交互 
 
 
 
@@ -79,11 +77,9 @@ CREATE DATABASE `medical` CHARACTER SET 'utf8'
 
 > 在本文档的API中，请求体中的数据需要以**`json`**格式发送到后端
 >
-> 所有的API本地IP为：172.16.176.120:8000
+> 线上API域名：api.sunshinego.online:9876
 >
-> ​				 线上IP为：120.78.168.67:9876
->
-> ​				线上API域名：api.sunshinego.online:9876
+> 过段时间打算准备毕设了，线上的API接口就会关掉。没办法，服务器比较垃圾，同时只能跑一个程序
 
 ### 1、创建用户/用户登录
 
