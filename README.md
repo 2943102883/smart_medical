@@ -1,26 +1,39 @@
 # 智能药箱
 
-一款简单的智能药箱。包括药品查询、药品管理、远程监控、远程操作药箱、智能提醒吃药、用户管理等基本功能
+![](https://img.shields.io/badge/language-python-blue)![](https://img.shields.io/badge/version-v1.0.0-success)![](https://img.shields.io/badge/license-MIT-ff63b4)
+
+## 主要功能
+
+- 药品查询(实时爬取药品信息)
+- 药品管理(药品的增删改查)
+- 远程监控(远程查看药箱的实时情况)
+- 远程控制(使用小程序可操作药箱)
+- 智能提醒吃药
+- 用户管理
 
 
 
-## 后端
+## 安装
 
-后端采用了django进行构建.
+此智能药箱分为前端、后端和硬件。具体的安装各个部分会有详细的步骤
+
+### 硬件
+
+[硬件使用arduino作为主板](https://github.com/2943102883/smart_medical/tree/main/%E7%A1%AC%E4%BB%B6)
+
+### 后端
+
+[后端采用了django进行构建](https://github.com/2943102883/smart_medical/tree/main/%E5%90%8E%E7%AB%AF)
+
+### 小程序
+
+[小程序使用VantUI进行构建](https://github.com/2943102883/smart_medical/tree/main/%E5%B0%8F%E7%A8%8B%E5%BA%8F/demo)
 
 
 
 
 
-## 小程序
 
-小程序使用VantUI进行构建
-
-
-
-## 使用的主要技术
-
-django、mysql、Redis、celery、爬虫、pychart、小程序、arduino
 
 
 

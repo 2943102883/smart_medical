@@ -10,13 +10,12 @@
 
 ## 使用截图
 
-![主页](D:\my_project\my_smart_medical\imgs\主页.png)
+![主页](imgs/主页.png)
 
-![个人中心](D:\my_project\my_smart_medical\imgs\个人中心.png)
+![个人中心](imgs/个人中心.png)
 
-![过期提醒](D:\my_project\my_smart_medical\imgs\提醒.png)
+![过期提醒](imgs/提醒.png)
 
-![药品搜索](D:\my_project\my_smart_medical\imgs\药品搜索.png)
+![药品搜索](imgs/药品搜索.png)
 
-![药品管理](D:\my_project\my_smart_medical\imgs\药品管理.png)
-
+![药品管理](imgs/药品管理.png)
