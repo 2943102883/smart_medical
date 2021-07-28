@@ -33,7 +33,7 @@
 
 ### 小程序
 
-[小程序使用VantUI进行构建](https://github.com/2943102883/smart_medical/tree/main/%E5%B0%8F%E7%A8%8B%E5%BA%8F/demo)
+[小程序使用VantUI进行构建](https://github.com/2943102883/smart_medical/tree/main/%E5%B0%8F%E7%A8%8B%E5%BA%8F)
 
 
 
