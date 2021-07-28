@@ -42,23 +42,67 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'corsheaders',
     'apps.medicalkit',
     'apps.medicine',
     'apps.user',
     'apps.iot',
     'apps.backstage',
     'sslserver',
+    'django_crontab',
 ]
+
+# CRONJOBS = [
+#     # 每1分钟生成一次首页静态文件
+#     ('*/1 * * * *', 'temlates.map.create_map', '>> ' + os.path.join(os.path.dirname(BASE_DIR), 'logs/crontab.log'))
+# ]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.common.CommonMiddleware',
     # 'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
+
+# 允许所有域名跨域(优先选择)
+CORS_ALLOW_CREDENTIALS = True
+# 允许携带cookie
+CORS_ORIGIN_ALLOW_ALL = True
+#允许所有的请求头
+# CORS_ALLOW_HEADERS = ('*')
+CORS_ALLOW_HEADERS = (
+    'XMLHttpRequest',
+    'X_FILENAME',
+    'accept-encoding',
+    'authorization',          #允许的请求头
+    'content-type',
+    'dnt',
+    'origin',
+    'user-agent',
+    'x-csrftoken',
+    'x-requested-with',
+    'Pragma',
+)
+
+CORS_ALLOW_METHODS = (
+    'DELETE',                 #允许的方法
+    'GET',
+    'OPTIONS',
+    'PATCH',
+    'POST',
+    'PUT',
+    'VIEW',
+)
+CORS_ORIGIN_WHITELIST = (
+    'http://127.0.0.1:8000',    #设置白名单
+    'http://localhost:8000',
+    'http://api.sunshinego.online:9876',
+    'http://sunshinego.online:9876',
+)
 
 ROOT_URLCONF = 'smart_medical_kit.urls'
 
@@ -101,6 +145,18 @@ DATABASES = {
     },
 }
 
+
+CACHES = {
+    "default": {  # 默认
+        "BACKEND": "django_redis.cache.RedisCache",
+        "LOCATION": "redis://120.78.168.67:6379/0",
+        "OPTIONS": {
+            "CLIENT_CLASS": "django_redis.client.DefaultClient",
+        }
+    }
+}
+SESSION_ENGINE = "django.contrib.sessions.backends.cache"
+SESSION_CACHE_ALIAS = "session"
 
 # Password validation
 # https://docs.djangoproject.com/en/3.1/ref/settings/#auth-password-validators

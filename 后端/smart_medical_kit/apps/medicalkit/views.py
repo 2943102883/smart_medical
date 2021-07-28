@@ -12,7 +12,9 @@ from utils.response_code import RETCODE
 
 class TestView(View):
     def get(self, request):
-        return http.JsonResponse({'code': 'ok'})
+        response = http.JsonResponse({'code': 'ok'})
+        # response['Access-Contro1-Allow-origin'] = "*"  # 设置请求头
+        return response
 
 
 class ShowSelfMedical(View):

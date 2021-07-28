@@ -22,4 +22,5 @@ urlpatterns = [
     path('', include('apps.medicalkit.urls')),
     path('', include('apps.user.urls')),
     path('', include('apps.iot.urls')),
+    path('', include('apps.backstage.urls')),
 ]

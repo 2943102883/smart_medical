@@ -24,9 +24,10 @@ logger = logging.getLogger('django')
 
 class CreateMedical(View):
     """新增药品、修改药品信息
-    阿司匹林"""
+    阿司匹林
+    """
 
-    def get(self, request, name, token):
+    def get(self, request, name, token, num):
         """新增药品"""
         category = request.GET.get('category')
         introduce = request.GET.get('introduce')
@@ -59,6 +60,7 @@ class CreateMedical(View):
                     taboo=taboo,
                     heed=heed,
                     savemethod=savemethod,
+                    medicalkit=num,
                     user=user,
                 )
             except Exception as e:
@@ -67,7 +69,7 @@ class CreateMedical(View):
 
             return http.JsonResponse({'code': RETCODE.OK, 'errmsg': 'ok'})
 
-    def put(self, request, name, token):
+    def put(self, request, name, token, num):
         """
         修改药品
             如果传了newname，那么就是可以修改药品名
@@ -84,6 +86,11 @@ class CreateMedical(View):
         taboo = data.get('taboo')
         heed = data.get('heed')
         savemethod = data.get('savemethod')
+        newnum = data.get('newnum')
+        if newnum is None:
+            newnum = num
+        else:
+            newnum = newnum
         # newname为必传参数，如果newname为0，则说明不改名字
         if newname == "0":
             newname = name
@@ -104,6 +111,7 @@ class CreateMedical(View):
                 use=use,
                 taboo=taboo,
                 heed=heed,
+                medicalkit=newnum,
                 savemethod=savemethod,
             )
         except Exception as e:
@@ -136,6 +144,7 @@ class ShowUserMedical(View):
             medicines_dict_in['taboo'] = m.taboo
             medicines_dict_in['heed'] = m.heed
             medicines_dict_in['savemethod'] = m.savemethod
+            medicines_dict_in['num'] = m.medicalkit
             medicines_list_in.append(medicines_dict_in)
             medicines_list.append(medicines_list_in)
         num = len(medicines_list)
@@ -940,10 +949,49 @@ class ShowTime2(View):
 
 
 class ImgageView(View):
+    """
+    test
+    """
+
     def post(self, request):
         picture = request.FILES.get("picture", "")
         file_content = ContentFile(request.FILES['picture'].read())
         picture2 = request.FILES
         file = ContentFile(request.POST.get('picture'))
+        data = json.loads(request.body.decode())
 
         return http.JsonResponse({'code': RETCODE.OK, 'errmsg': 'ok'})
+
+
+class TranslateView(View):
+    """
+    药品收藏
+    """
+    def get(self, request):
+        name = request.GET.get('name')
+        num = request.GET.get('num')
+        medical = Medicals.objects.get(name=name)
+        medical_searched = Medical_loads.objects.get(num=num, medical=medical)
+        medical_searched.translate = 1
+        medical_searched.save()
+
+        return http.JsonResponse({'code': RETCODE.OK, 'errmsg': '收藏成功'})
+
+    def post(self, request):
+        medicals = Medical_loads.objects.filter(translate=1)
+        data_dict = {}
+        for n in range(len(medicals)):
+            dict_in = {}
+            dict_in['name'] = medicals[n].name
+            dict_in['img_url'] = medicals[n].img_url
+            dict_in['suit'] = medicals[n].suit
+            dict_in['usemethod'] = medicals[n].usemethod
+            dict_in['lelment'] = medicals[n].lelment
+            dict_in['bad'] = medicals[n].bad
+            dict_in['err'] = medicals[n].err
+            dict_in['heed'] = medicals[n].heed
+            dict_in['savemethod'] = medicals[n].savemethod
+            data_dict[n] = dict_in
+
+        return http.JsonResponse({'code': RETCODE.OK, 'data': data_dict})
+

@@ -1,0 +1,1 @@
+/www/wwwroot/medical/medical_venv/bin/python3 /www/wwwroot/medical/temlates/map.py

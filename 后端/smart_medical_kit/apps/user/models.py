@@ -19,7 +19,9 @@ class Users(models.Model):
     birthday = models.CharField(max_length=64, verbose_name='生日', null=True)
     phone = models.CharField(max_length=64, verbose_name='联系电话', null=True)
     contacts = models.IntegerField(verbose_name='应急联系人', null=True)
+    is_delete = models.IntegerField(verbose_name='逻辑删除', default=1)  # 1是未删除， 0是删除
     creat_data = models.DateField(auto_now=True, verbose_name='创建时间')  # auto_now表示每次保存对 象时，自动设置该字段为当前时间
+    live = models.IntegerField(verbose_name='是否在线', default=0)  # 0为未登录， 1为登录
 
     class Meta:
         db_table = 'User'

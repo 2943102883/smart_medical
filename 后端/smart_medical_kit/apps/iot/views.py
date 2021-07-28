@@ -11,4 +11,5 @@ class ShowIOTs(View):
 
 class KTView(View):
     def get(self, request):
+        # return render(request, 'kt.html')
         return render(request, 'kt.html')

@@ -3420,3 +3420,1018 @@ WARNING 2021-05-10 15:33:25,556 log 224 Not Found: /
 WARNING 2021-05-10 15:33:25,557 basehttp 157 "GET / HTTP/1.1" 404 5311
 WARNING 2021-05-10 15:33:25,578 log 224 Not Found: /favicon.ico
 WARNING 2021-05-10 15:33:25,579 basehttp 157 "GET /favicon.ico HTTP/1.1" 404 5362
+INFO 2021-05-19 07:06:45,814 autoreload 617 Watching for file changes with StatReloader
+WARNING 2021-05-19 07:06:55,082 log 230 Not Found: /
+WARNING 2021-05-19 07:06:55,084 basehttp 157 "GET / HTTP/1.1" 404 5306
+WARNING 2021-05-19 07:06:58,278 log 230 Not Found: /favicon.ico
+WARNING 2021-05-19 07:06:58,279 basehttp 157 "GET /favicon.ico HTTP/1.1" 404 5357
+INFO 2021-05-19 07:07:33,630 basehttp 157 "GET /test HTTP/1.1" 301 0
+INFO 2021-05-19 07:07:33,645 basehttp 157 "GET /test/ HTTP/1.1" 200 14
+INFO 2021-05-20 20:44:35,813 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-05-20 20:44:43,681 basehttp 157 "GET /test HTTP/1.1" 301 0
+INFO 2021-05-20 20:44:43,707 basehttp 157 "GET /test/ HTTP/1.1" 200 14
+WARNING 2021-05-20 20:44:44,499 log 224 Not Found: /favicon.ico
+WARNING 2021-05-20 20:44:44,500 basehttp 157 "GET /favicon.ico HTTP/1.1" 404 5357
+WARNING 2021-05-20 20:44:47,754 log 224 Not Found: /usermsg
+WARNING 2021-05-20 20:44:47,755 basehttp 157 "GET /usermsg HTTP/1.1" 404 5345
+WARNING 2021-05-20 20:44:55,931 log 224 Not Found: /usermsg
+WARNING 2021-05-20 20:44:55,932 basehttp 157 "GET /usermsg HTTP/1.1" 404 5345
+INFO 2021-05-20 20:46:05,111 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-05-20 20:46:12,954 basehttp 157 "GET /usermsg HTTP/1.1" 301 0
+INFO 2021-05-20 20:46:13,040 basehttp 157 "GET /usermsg/ HTTP/1.1" 200 218
+INFO 2021-05-20 20:48:05,809 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-05-20 20:48:11,888 basehttp 157 "GET /usernum/ HTTP/1.1" 200 218
+INFO 2021-05-20 20:48:38,696 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-05-20 20:48:42,377 basehttp 157 "GET /usernum/ HTTP/1.1" 200 23
+INFO 2021-05-20 20:49:07,746 autoreload 240 D:\my_project\smart_medical_kit\leap\server\smart_medical_kit\apps\backstage\views.py changed, reloading.
+INFO 2021-05-20 20:49:09,007 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-05-20 20:49:11,768 autoreload 240 D:\my_project\smart_medical_kit\leap\server\smart_medical_kit\apps\backstage\views.py changed, reloading.
+INFO 2021-05-20 20:49:13,065 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-05-20 20:49:19,943 autoreload 240 D:\my_project\smart_medical_kit\leap\server\smart_medical_kit\apps\backstage\views.py changed, reloading.
+INFO 2021-05-20 20:49:21,201 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-05-20 20:53:28,982 autoreload 240 D:\my_project\smart_medical_kit\leap\server\smart_medical_kit\apps\backstage\views.py changed, reloading.
+INFO 2021-05-20 20:53:30,241 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-05-20 21:19:56,192 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-05-20 21:20:01,495 basehttp 157 "GET /user HTTP/1.1" 301 0
+INFO 2021-05-20 21:20:01,586 basehttp 157 "GET /user/ HTTP/1.1" 200 218
+INFO 2021-05-20 21:21:03,800 autoreload 240 D:\my_project\smart_medical_kit\leap\server\smart_medical_kit\apps\backstage\views.py changed, reloading.
+INFO 2021-05-20 21:21:05,050 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-05-20 21:21:08,403 basehttp 157 "GET /user/?token=1840707266 HTTP/1.1" 200 211
+INFO 2021-05-20 21:21:12,118 basehttp 157 "GET /user/?token=1840707264 HTTP/1.1" 200 53
+ERROR 2021-05-20 21:24:07,820 log 224 Internal Server Error: /user
+Traceback (most recent call last):
+  File "C:\Users\SunShineGO\Envs\django_3.8.2\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\SunShineGO\Envs\django_3.8.2\lib\site-packages\django\utils\deprecation.py", line 113, in __call__
+    response = self.process_request(request)
+  File "C:\Users\SunShineGO\Envs\django_3.8.2\lib\site-packages\django\middleware\common.py", line 54, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "C:\Users\SunShineGO\Envs\django_3.8.2\lib\site-packages\django\middleware\common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via PUT, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining PUT data. Change your form to point to 127.0.0.1:8000/user/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR 2021-05-20 21:24:07,822 basehttp 157 "PUT /user HTTP/1.1" 500 72528
+ERROR 2021-05-20 21:24:29,858 log 224 Internal Server Error: /user
+Traceback (most recent call last):
+  File "C:\Users\SunShineGO\Envs\django_3.8.2\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\SunShineGO\Envs\django_3.8.2\lib\site-packages\django\utils\deprecation.py", line 113, in __call__
+    response = self.process_request(request)
+  File "C:\Users\SunShineGO\Envs\django_3.8.2\lib\site-packages\django\middleware\common.py", line 54, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "C:\Users\SunShineGO\Envs\django_3.8.2\lib\site-packages\django\middleware\common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via PUT, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining PUT data. Change your form to point to 127.0.0.1:8000/user/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR 2021-05-20 21:24:29,859 basehttp 157 "PUT /user HTTP/1.1" 500 72528
+ERROR 2021-05-20 21:25:29,808 log 224 Internal Server Error: /user/
+Traceback (most recent call last):
+  File "C:\Users\SunShineGO\Envs\django_3.8.2\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\SunShineGO\Envs\django_3.8.2\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\SunShineGO\Envs\django_3.8.2\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\SunShineGO\Envs\django_3.8.2\lib\site-packages\django\views\generic\base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\my_project\smart_medical_kit\leap\server\smart_medical_kit\apps\backstage\views.py", line 93, in put
+    data = json.loads(request.body.decode('utf-8'))
+  File "d:\python3.8.2\lib\json\__init__.py", line 357, in loads
+    return _default_decoder.decode(s)
+  File "d:\python3.8.2\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "d:\python3.8.2\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+ERROR 2021-05-20 21:25:29,813 basehttp 157 "PUT /user/ HTTP/1.1" 500 91840
+INFO 2021-05-20 21:26:09,756 autoreload 240 D:\my_project\smart_medical_kit\leap\server\smart_medical_kit\apps\backstage\views.py changed, reloading.
+INFO 2021-05-20 21:26:10,987 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-05-20 21:26:23,143 autoreload 240 D:\my_project\smart_medical_kit\leap\server\smart_medical_kit\apps\backstage\views.py changed, reloading.
+INFO 2021-05-20 21:26:24,480 autoreload 617 Watching for file changes with StatReloader
+ERROR 2021-05-20 21:26:37,264 log 224 Internal Server Error: /user/
+Traceback (most recent call last):
+  File "C:\Users\SunShineGO\Envs\django_3.8.2\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\SunShineGO\Envs\django_3.8.2\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\SunShineGO\Envs\django_3.8.2\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\SunShineGO\Envs\django_3.8.2\lib\site-packages\django\views\generic\base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\my_project\smart_medical_kit\leap\server\smart_medical_kit\apps\backstage\views.py", line 93, in put
+    data = json.loads(request.body.decode())
+  File "d:\python3.8.2\lib\json\__init__.py", line 357, in loads
+    return _default_decoder.decode(s)
+  File "d:\python3.8.2\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "d:\python3.8.2\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+ERROR 2021-05-20 21:26:37,268 basehttp 157 "PUT /user/ HTTP/1.1" 500 91806
+INFO 2021-05-20 21:28:24,376 autoreload 240 D:\my_project\smart_medical_kit\leap\server\smart_medical_kit\apps\backstage\views.py changed, reloading.
+INFO 2021-05-20 21:28:25,650 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-05-20 21:28:55,452 autoreload 617 Watching for file changes with StatReloader
+ERROR 2021-05-20 21:30:06,430 log 224 Internal Server Error: /user/
+Traceback (most recent call last):
+  File "C:\Users\SunShineGO\Envs\django_3.8.2\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\SunShineGO\Envs\django_3.8.2\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\SunShineGO\Envs\django_3.8.2\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\SunShineGO\Envs\django_3.8.2\lib\site-packages\django\views\generic\base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\my_project\smart_medical_kit\leap\server\smart_medical_kit\apps\backstage\views.py", line 93, in put
+    data = json.loads(request.body.decode())
+  File "d:\python3.8.2\lib\json\__init__.py", line 357, in loads
+    return _default_decoder.decode(s)
+  File "d:\python3.8.2\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "d:\python3.8.2\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+ERROR 2021-05-20 21:30:06,434 basehttp 157 "PUT /user/ HTTP/1.1" 500 91806
+ERROR 2021-05-20 21:32:29,334 log 224 Internal Server Error: /user/
+Traceback (most recent call last):
+  File "C:\Users\SunShineGO\Envs\django_3.8.2\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\SunShineGO\Envs\django_3.8.2\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\SunShineGO\Envs\django_3.8.2\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\SunShineGO\Envs\django_3.8.2\lib\site-packages\django\views\generic\base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\my_project\smart_medical_kit\leap\server\smart_medical_kit\apps\backstage\views.py", line 93, in put
+    data = json.loads(request.body.decode())
+  File "d:\python3.8.2\lib\json\__init__.py", line 357, in loads
+    return _default_decoder.decode(s)
+  File "d:\python3.8.2\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "d:\python3.8.2\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+ERROR 2021-05-20 21:32:29,337 basehttp 157 "PUT /user/ HTTP/1.1" 500 91806
+INFO 2021-05-20 21:33:22,082 basehttp 157 "PUT /user/ HTTP/1.1" 200 51
+INFO 2021-05-20 21:35:10,198 autoreload 240 D:\my_project\smart_medical_kit\leap\server\smart_medical_kit\apps\backstage\views.py changed, reloading.
+INFO 2021-05-20 21:35:11,480 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-05-20 21:36:16,858 autoreload 240 D:\my_project\smart_medical_kit\leap\server\smart_medical_kit\apps\backstage\views.py changed, reloading.
+INFO 2021-05-20 21:36:18,174 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-05-20 21:37:22,317 autoreload 240 D:\my_project\smart_medical_kit\leap\server\smart_medical_kit\apps\backstage\views.py changed, reloading.
+INFO 2021-05-20 21:37:23,669 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-05-20 21:38:09,195 autoreload 240 D:\my_project\smart_medical_kit\leap\server\smart_medical_kit\apps\backstage\views.py changed, reloading.
+INFO 2021-05-20 21:38:10,464 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-05-20 21:40:14,096 autoreload 240 D:\my_project\smart_medical_kit\leap\server\smart_medical_kit\apps\backstage\views.py changed, reloading.
+INFO 2021-05-20 21:40:15,339 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-05-20 21:41:57,146 autoreload 240 D:\my_project\smart_medical_kit\leap\server\smart_medical_kit\apps\backstage\views.py changed, reloading.
+INFO 2021-05-20 21:41:58,446 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-05-20 21:43:01,459 autoreload 240 D:\my_project\smart_medical_kit\leap\server\smart_medical_kit\apps\backstage\views.py changed, reloading.
+INFO 2021-05-20 21:43:02,711 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-05-20 21:45:45,029 autoreload 240 D:\my_project\smart_medical_kit\leap\server\smart_medical_kit\apps\backstage\views.py changed, reloading.
+INFO 2021-05-20 21:45:46,236 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-05-20 21:48:41,702 autoreload 240 D:\my_project\smart_medical_kit\leap\server\smart_medical_kit\apps\backstage\urls.py changed, reloading.
+INFO 2021-05-20 21:48:42,923 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-05-20 21:49:02,310 basehttp 157 "GET /usercollect?token=1840707266 HTTP/1.1" 301 0
+ERROR 2021-05-20 21:49:02,512 log 224 Internal Server Error: /usercollect/
+Traceback (most recent call last):
+  File "C:\Users\SunShineGO\Envs\django_3.8.2\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\SunShineGO\Envs\django_3.8.2\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\SunShineGO\Envs\django_3.8.2\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\SunShineGO\Envs\django_3.8.2\lib\site-packages\django\views\generic\base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\my_project\smart_medical_kit\leap\server\smart_medical_kit\apps\backstage\views.py", line 210, in get
+    data_dict[n+1] = n
+TypeError: unsupported operand type(s) for +: 'Medicine_user' and 'int'
+ERROR 2021-05-20 21:49:02,515 basehttp 157 "GET /usercollect/?token=1840707266 HTTP/1.1" 500 78267
+ERROR 2021-05-20 21:49:19,556 log 224 Internal Server Error: /usercollect/
+Traceback (most recent call last):
+  File "C:\Users\SunShineGO\Envs\django_3.8.2\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\SunShineGO\Envs\django_3.8.2\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\SunShineGO\Envs\django_3.8.2\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\SunShineGO\Envs\django_3.8.2\lib\site-packages\django\views\generic\base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\my_project\smart_medical_kit\leap\server\smart_medical_kit\apps\backstage\views.py", line 210, in get
+    data_dict[n+1] = n
+TypeError: unsupported operand type(s) for +: 'Medicine_user' and 'int'
+ERROR 2021-05-20 21:49:19,557 basehttp 157 "GET /usercollect/?token=1840707266 HTTP/1.1" 500 78404
+INFO 2021-05-20 22:39:40,801 autoreload 617 Watching for file changes with StatReloader
+ERROR 2021-05-20 22:39:44,228 log 224 Internal Server Error: /usercollect/
+Traceback (most recent call last):
+  File "C:\Users\SunShineGO\Envs\django_3.8.2\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\SunShineGO\Envs\django_3.8.2\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\SunShineGO\Envs\django_3.8.2\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\SunShineGO\Envs\django_3.8.2\lib\site-packages\django\views\generic\base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\my_project\smart_medical_kit\leap\server\smart_medical_kit\apps\backstage\views.py", line 213, in get
+    return http.JsonResponse({'code': RETCODE.OK, 'errmsg': 'ok', 'data': data_dict})
+  File "C:\Users\SunShineGO\Envs\django_3.8.2\lib\site-packages\django\http\response.py", line 567, in __init__
+    data = json.dumps(data, cls=encoder, **json_dumps_params)
+  File "d:\python3.8.2\lib\json\__init__.py", line 234, in dumps
+    return cls(
+  File "d:\python3.8.2\lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "d:\python3.8.2\lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "C:\Users\SunShineGO\Envs\django_3.8.2\lib\site-packages\django\core\serializers\json.py", line 105, in default
+    return super().default(o)
+  File "d:\python3.8.2\lib\json\encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type Medicine_user is not JSON serializable
+ERROR 2021-05-20 22:39:44,231 basehttp 157 "GET /usercollect/?token=1840707266 HTTP/1.1" 500 105096
+INFO 2021-05-20 22:40:20,245 autoreload 240 D:\my_project\smart_medical_kit\leap\server\smart_medical_kit\apps\backstage\views.py changed, reloading.
+INFO 2021-05-20 22:40:21,523 autoreload 617 Watching for file changes with StatReloader
+ERROR 2021-05-20 22:42:31,362 log 224 Internal Server Error: /usercollect/
+Traceback (most recent call last):
+  File "C:\Users\SunShineGO\Envs\django_3.8.2\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\SunShineGO\Envs\django_3.8.2\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\SunShineGO\Envs\django_3.8.2\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\SunShineGO\Envs\django_3.8.2\lib\site-packages\django\views\generic\base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\my_project\smart_medical_kit\leap\server\smart_medical_kit\apps\backstage\views.py", line 214, in get
+    return http.JsonResponse({'code': RETCODE.OK, 'errmsg': 'ok', 'data': data_dict})
+  File "C:\Users\SunShineGO\Envs\django_3.8.2\lib\site-packages\django\http\response.py", line 567, in __init__
+    data = json.dumps(data, cls=encoder, **json_dumps_params)
+  File "d:\python3.8.2\lib\json\__init__.py", line 234, in dumps
+    return cls(
+  File "d:\python3.8.2\lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "d:\python3.8.2\lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "C:\Users\SunShineGO\Envs\django_3.8.2\lib\site-packages\django\core\serializers\json.py", line 105, in default
+    return super().default(o)
+  File "d:\python3.8.2\lib\json\encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type Medicine_user is not JSON serializable
+ERROR 2021-05-20 22:42:31,366 basehttp 157 "GET /usercollect/?token=1840707266 HTTP/1.1" 500 105096
+ERROR 2021-05-20 22:43:43,555 log 224 Internal Server Error: /usercollect/
+Traceback (most recent call last):
+  File "C:\Users\SunShineGO\Envs\django_3.8.2\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\SunShineGO\Envs\django_3.8.2\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\SunShineGO\Envs\django_3.8.2\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\SunShineGO\Envs\django_3.8.2\lib\site-packages\django\views\generic\base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\my_project\smart_medical_kit\leap\server\smart_medical_kit\apps\backstage\views.py", line 214, in get
+    return http.JsonResponse({'code': RETCODE.OK, 'errmsg': 'ok', 'data': data_dict})
+  File "C:\Users\SunShineGO\Envs\django_3.8.2\lib\site-packages\django\http\response.py", line 567, in __init__
+    data = json.dumps(data, cls=encoder, **json_dumps_params)
+  File "d:\python3.8.2\lib\json\__init__.py", line 234, in dumps
+    return cls(
+  File "d:\python3.8.2\lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "d:\python3.8.2\lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "C:\Users\SunShineGO\Envs\django_3.8.2\lib\site-packages\django\core\serializers\json.py", line 105, in default
+    return super().default(o)
+  File "d:\python3.8.2\lib\json\encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type Medicine_user is not JSON serializable
+ERROR 2021-05-20 22:43:43,559 basehttp 157 "GET /usercollect/?token=1840707266 HTTP/1.1" 500 105096
+INFO 2021-05-20 22:43:55,469 autoreload 240 D:\my_project\smart_medical_kit\leap\server\smart_medical_kit\apps\backstage\views.py changed, reloading.
+INFO 2021-05-20 22:43:56,767 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-05-20 22:44:02,813 basehttp 157 "GET /usercollect/?token=1840707266 HTTP/1.1" 200 29
+INFO 2021-05-20 22:44:12,216 autoreload 240 D:\my_project\smart_medical_kit\leap\server\smart_medical_kit\apps\backstage\views.py changed, reloading.
+INFO 2021-05-20 22:44:13,502 autoreload 617 Watching for file changes with StatReloader
+ERROR 2021-05-20 22:44:15,608 log 224 Internal Server Error: /usercollect/
+Traceback (most recent call last):
+  File "C:\Users\SunShineGO\Envs\django_3.8.2\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\SunShineGO\Envs\django_3.8.2\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\SunShineGO\Envs\django_3.8.2\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\SunShineGO\Envs\django_3.8.2\lib\site-packages\django\views\generic\base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\my_project\smart_medical_kit\leap\server\smart_medical_kit\apps\backstage\views.py", line 214, in get
+    return http.JsonResponse({'code': RETCODE.OK, 'errmsg': 'ok', 'data': data_dict})
+  File "C:\Users\SunShineGO\Envs\django_3.8.2\lib\site-packages\django\http\response.py", line 567, in __init__
+    data = json.dumps(data, cls=encoder, **json_dumps_params)
+  File "d:\python3.8.2\lib\json\__init__.py", line 234, in dumps
+    return cls(
+  File "d:\python3.8.2\lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "d:\python3.8.2\lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "C:\Users\SunShineGO\Envs\django_3.8.2\lib\site-packages\django\core\serializers\json.py", line 105, in default
+    return super().default(o)
+  File "d:\python3.8.2\lib\json\encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type Medicine_user is not JSON serializable
+ERROR 2021-05-20 22:44:15,611 basehttp 157 "GET /usercollect/?token=1840707266 HTTP/1.1" 500 105096
+ERROR 2021-05-20 22:56:37,386 log 224 Internal Server Error: /usercollect/
+Traceback (most recent call last):
+  File "C:\Users\SunShineGO\Envs\django_3.8.2\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\SunShineGO\Envs\django_3.8.2\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\SunShineGO\Envs\django_3.8.2\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\SunShineGO\Envs\django_3.8.2\lib\site-packages\django\views\generic\base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\my_project\smart_medical_kit\leap\server\smart_medical_kit\apps\backstage\views.py", line 214, in get
+    m += 1
+  File "C:\Users\SunShineGO\Envs\django_3.8.2\lib\site-packages\django\http\response.py", line 567, in __init__
+    data = json.dumps(data, cls=encoder, **json_dumps_params)
+  File "d:\python3.8.2\lib\json\__init__.py", line 234, in dumps
+    return cls(
+  File "d:\python3.8.2\lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "d:\python3.8.2\lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "C:\Users\SunShineGO\Envs\django_3.8.2\lib\site-packages\django\core\serializers\json.py", line 105, in default
+    return super().default(o)
+  File "d:\python3.8.2\lib\json\encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type Medicine_user is not JSON serializable
+ERROR 2021-05-20 22:56:37,389 basehttp 157 "GET /usercollect/?token=1840707266 HTTP/1.1" 500 105269
+INFO 2021-05-20 22:56:37,712 autoreload 240 D:\my_project\smart_medical_kit\leap\server\smart_medical_kit\apps\backstage\views.py changed, reloading.
+INFO 2021-05-20 22:56:39,064 autoreload 617 Watching for file changes with StatReloader
+ERROR 2021-05-20 22:56:41,230 log 224 Internal Server Error: /usercollect/
+Traceback (most recent call last):
+  File "C:\Users\SunShineGO\Envs\django_3.8.2\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\SunShineGO\Envs\django_3.8.2\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\SunShineGO\Envs\django_3.8.2\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\SunShineGO\Envs\django_3.8.2\lib\site-packages\django\views\generic\base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\my_project\smart_medical_kit\leap\server\smart_medical_kit\apps\backstage\views.py", line 215, in get
+    return http.JsonResponse({'code': RETCODE.OK, 'errmsg': 'ok', 'data': data_dict})
+  File "C:\Users\SunShineGO\Envs\django_3.8.2\lib\site-packages\django\http\response.py", line 567, in __init__
+    data = json.dumps(data, cls=encoder, **json_dumps_params)
+  File "d:\python3.8.2\lib\json\__init__.py", line 234, in dumps
+    return cls(
+  File "d:\python3.8.2\lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "d:\python3.8.2\lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "C:\Users\SunShineGO\Envs\django_3.8.2\lib\site-packages\django\core\serializers\json.py", line 105, in default
+    return super().default(o)
+  File "d:\python3.8.2\lib\json\encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type Medicine_user is not JSON serializable
+ERROR 2021-05-20 22:56:41,233 basehttp 157 "GET /usercollect/?token=1840707266 HTTP/1.1" 500 105192
+INFO 2021-05-20 22:57:29,014 autoreload 240 D:\my_project\smart_medical_kit\leap\server\smart_medical_kit\apps\medicine\models.py changed, reloading.
+INFO 2021-05-20 22:57:30,368 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-05-20 22:57:36,429 basehttp 157 "GET /usercollect/ HTTP/1.1" 200 53
+ERROR 2021-05-20 22:57:45,218 log 224 Internal Server Error: /usercollect/
+Traceback (most recent call last):
+  File "C:\Users\SunShineGO\Envs\django_3.8.2\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\SunShineGO\Envs\django_3.8.2\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\SunShineGO\Envs\django_3.8.2\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\SunShineGO\Envs\django_3.8.2\lib\site-packages\django\views\generic\base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\my_project\smart_medical_kit\leap\server\smart_medical_kit\apps\backstage\views.py", line 215, in get
+    return http.JsonResponse({'code': RETCODE.OK, 'errmsg': 'ok', 'data': data_dict})
+  File "C:\Users\SunShineGO\Envs\django_3.8.2\lib\site-packages\django\http\response.py", line 567, in __init__
+    data = json.dumps(data, cls=encoder, **json_dumps_params)
+  File "d:\python3.8.2\lib\json\__init__.py", line 234, in dumps
+    return cls(
+  File "d:\python3.8.2\lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "d:\python3.8.2\lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "C:\Users\SunShineGO\Envs\django_3.8.2\lib\site-packages\django\core\serializers\json.py", line 105, in default
+    return super().default(o)
+  File "d:\python3.8.2\lib\json\encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type Medicine_user is not JSON serializable
+ERROR 2021-05-20 22:57:45,221 basehttp 157 "GET /usercollect/?token=1840707266 HTTP/1.1" 500 105055
+INFO 2021-05-20 22:58:52,820 autoreload 240 D:\my_project\smart_medical_kit\leap\server\smart_medical_kit\apps\backstage\views.py changed, reloading.
+INFO 2021-05-20 22:58:54,141 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-05-20 22:59:18,784 autoreload 240 D:\my_project\smart_medical_kit\leap\server\smart_medical_kit\apps\backstage\views.py changed, reloading.
+INFO 2021-05-20 22:59:20,043 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-05-20 23:00:46,163 autoreload 240 D:\my_project\smart_medical_kit\leap\server\smart_medical_kit\apps\backstage\views.py changed, reloading.
+INFO 2021-05-20 23:00:47,443 autoreload 617 Watching for file changes with StatReloader
+ERROR 2021-05-20 23:00:50,446 log 224 Internal Server Error: /usercollect/
+Traceback (most recent call last):
+  File "C:\Users\SunShineGO\Envs\django_3.8.2\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\SunShineGO\Envs\django_3.8.2\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\SunShineGO\Envs\django_3.8.2\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\SunShineGO\Envs\django_3.8.2\lib\site-packages\django\views\generic\base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\my_project\smart_medical_kit\leap\server\smart_medical_kit\apps\backstage\views.py", line 216, in get
+    return http.JsonResponse({'code': RETCODE.OK, 'errmsg': 'ok', 'data': data_dict})
+  File "C:\Users\SunShineGO\Envs\django_3.8.2\lib\site-packages\django\http\response.py", line 567, in __init__
+    data = json.dumps(data, cls=encoder, **json_dumps_params)
+  File "d:\python3.8.2\lib\json\__init__.py", line 234, in dumps
+    return cls(
+  File "d:\python3.8.2\lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "d:\python3.8.2\lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "C:\Users\SunShineGO\Envs\django_3.8.2\lib\site-packages\django\core\serializers\json.py", line 105, in default
+    return super().default(o)
+  File "d:\python3.8.2\lib\json\encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type Medicine_user is not JSON serializable
+ERROR 2021-05-20 23:00:50,449 basehttp 157 "GET /usercollect/?token=1840707266 HTTP/1.1" 500 105127
+ERROR 2021-05-20 23:00:56,219 log 224 Internal Server Error: /usercollect/
+Traceback (most recent call last):
+  File "C:\Users\SunShineGO\Envs\django_3.8.2\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\SunShineGO\Envs\django_3.8.2\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\SunShineGO\Envs\django_3.8.2\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\SunShineGO\Envs\django_3.8.2\lib\site-packages\django\views\generic\base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\my_project\smart_medical_kit\leap\server\smart_medical_kit\apps\backstage\views.py", line 216, in get
+    return http.JsonResponse({'code': RETCODE.OK, 'errmsg': 'ok', 'data': data_dict})
+  File "C:\Users\SunShineGO\Envs\django_3.8.2\lib\site-packages\django\http\response.py", line 567, in __init__
+    data = json.dumps(data, cls=encoder, **json_dumps_params)
+  File "d:\python3.8.2\lib\json\__init__.py", line 234, in dumps
+    return cls(
+  File "d:\python3.8.2\lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "d:\python3.8.2\lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "C:\Users\SunShineGO\Envs\django_3.8.2\lib\site-packages\django\core\serializers\json.py", line 105, in default
+    return super().default(o)
+  File "d:\python3.8.2\lib\json\encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type Medicine_user is not JSON serializable
+ERROR 2021-05-20 23:00:56,221 basehttp 157 "GET /usercollect/?token=1840707266 HTTP/1.1" 500 105127
+INFO 2021-05-20 23:04:54,393 autoreload 240 D:\my_project\smart_medical_kit\leap\server\smart_medical_kit\apps\backstage\views.py changed, reloading.
+INFO 2021-05-20 23:04:55,692 autoreload 617 Watching for file changes with StatReloader
+ERROR 2021-05-20 23:04:57,735 log 224 Internal Server Error: /usercollect/
+Traceback (most recent call last):
+  File "C:\Users\SunShineGO\Envs\django_3.8.2\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\SunShineGO\Envs\django_3.8.2\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\SunShineGO\Envs\django_3.8.2\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\SunShineGO\Envs\django_3.8.2\lib\site-packages\django\views\generic\base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\my_project\smart_medical_kit\leap\server\smart_medical_kit\apps\backstage\views.py", line 218, in get
+    return http.JsonResponse({'code': RETCODE.OK, 'errmsg': 'ok', 'data': data})
+  File "C:\Users\SunShineGO\Envs\django_3.8.2\lib\site-packages\django\http\response.py", line 567, in __init__
+    data = json.dumps(data, cls=encoder, **json_dumps_params)
+  File "d:\python3.8.2\lib\json\__init__.py", line 234, in dumps
+    return cls(
+  File "d:\python3.8.2\lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "d:\python3.8.2\lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "C:\Users\SunShineGO\Envs\django_3.8.2\lib\site-packages\django\core\serializers\json.py", line 105, in default
+    return super().default(o)
+  File "d:\python3.8.2\lib\json\encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type Medicine_user is not JSON serializable
+ERROR 2021-05-20 23:04:57,738 basehttp 157 "GET /usercollect/?token=1840707266 HTTP/1.1" 500 105429
+INFO 2021-05-20 23:05:14,296 autoreload 240 D:\my_project\smart_medical_kit\leap\server\smart_medical_kit\apps\backstage\views.py changed, reloading.
+INFO 2021-05-20 23:05:15,687 autoreload 617 Watching for file changes with StatReloader
+ERROR 2021-05-20 23:05:42,976 log 224 Internal Server Error: /usercollect/
+Traceback (most recent call last):
+  File "C:\Users\SunShineGO\Envs\django_3.8.2\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\SunShineGO\Envs\django_3.8.2\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\SunShineGO\Envs\django_3.8.2\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\SunShineGO\Envs\django_3.8.2\lib\site-packages\django\views\generic\base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\my_project\smart_medical_kit\leap\server\smart_medical_kit\apps\backstage\views.py", line 217, in get
+    return http.JsonResponse({'code': RETCODE.OK, 'errmsg': 'ok', 'data': data_dict})
+  File "C:\Users\SunShineGO\Envs\django_3.8.2\lib\site-packages\django\http\response.py", line 567, in __init__
+    data = json.dumps(data, cls=encoder, **json_dumps_params)
+  File "d:\python3.8.2\lib\json\__init__.py", line 234, in dumps
+    return cls(
+  File "d:\python3.8.2\lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "d:\python3.8.2\lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "C:\Users\SunShineGO\Envs\django_3.8.2\lib\site-packages\django\core\serializers\json.py", line 105, in default
+    return super().default(o)
+  File "d:\python3.8.2\lib\json\encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type Medicine_user is not JSON serializable
+ERROR 2021-05-20 23:05:55,973 basehttp 157 "GET /usercollect/?token=1840707266 HTTP/1.1" 500 105127
+INFO 2021-05-20 23:07:40,767 autoreload 240 D:\my_project\smart_medical_kit\leap\server\smart_medical_kit\apps\backstage\views.py changed, reloading.
+INFO 2021-05-20 23:07:42,020 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-05-20 23:15:24,557 autoreload 240 D:\my_project\smart_medical_kit\leap\server\smart_medical_kit\apps\medicine\models.py changed, reloading.
+INFO 2021-05-20 23:15:25,903 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-05-20 23:26:14,476 basehttp 157 "GET /usernum HTTP/1.1" 301 0
+INFO 2021-05-20 23:26:14,567 basehttp 157 "GET /usernum/ HTTP/1.1" 200 23
+INFO 2021-05-20 23:29:16,468 basehttp 157 "GET /user/ HTTP/1.1" 200 211
+INFO 2021-05-20 23:37:09,824 autoreload 240 D:\my_project\smart_medical_kit\leap\server\smart_medical_kit\apps\backstage\views.py changed, reloading.
+INFO 2021-05-20 23:37:11,048 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-05-21 17:39:17,677 autoreload 240 D:\my_project\smart_medical_kit\leap\server\smart_medical_kit\apps\medicine\models.py changed, reloading.
+INFO 2021-05-21 17:39:19,235 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-05-21 17:40:25,828 autoreload 240 D:\my_project\smart_medical_kit\leap\server\smart_medical_kit\apps\medicine\models.py changed, reloading.
+INFO 2021-05-21 17:40:27,135 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-05-21 17:40:50,755 autoreload 240 D:\my_project\smart_medical_kit\leap\server\smart_medical_kit\apps\medicine\views.py changed, reloading.
+INFO 2021-05-21 17:40:52,086 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-05-21 17:42:50,794 autoreload 240 D:\my_project\smart_medical_kit\leap\server\smart_medical_kit\apps\medicine\views.py changed, reloading.
+INFO 2021-05-21 17:42:52,047 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-05-21 17:43:22,019 autoreload 240 D:\my_project\smart_medical_kit\leap\server\smart_medical_kit\apps\medicine\views.py changed, reloading.
+INFO 2021-05-21 17:43:23,323 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-05-21 17:43:46,215 autoreload 240 D:\my_project\smart_medical_kit\leap\server\smart_medical_kit\apps\medicine\views.py changed, reloading.
+INFO 2021-05-21 17:43:47,673 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-05-21 17:45:13,072 autoreload 240 D:\my_project\smart_medical_kit\leap\server\smart_medical_kit\apps\medicine\views.py changed, reloading.
+INFO 2021-05-21 17:45:14,442 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-05-21 17:45:40,172 autoreload 240 D:\my_project\smart_medical_kit\leap\server\smart_medical_kit\apps\medicine\urls.py changed, reloading.
+INFO 2021-05-21 17:45:41,497 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-05-21 17:45:56,433 basehttp 157 "GET /translate/%E9%98%BF%E8%8E%AB%E8%A5%BF%E6%9E%97/1 HTTP/1.1" 301 0
+INFO 2021-05-21 17:45:56,530 basehttp 157 "GET /translate/%E9%98%BF%E8%8E%AB%E8%A5%BF%E6%9E%97/1/ HTTP/1.1" 200 51
+INFO 2021-05-21 17:46:46,067 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-05-21 17:46:48,077 basehttp 157 "GET /translate/%E9%98%BF%E8%8E%AB%E8%A5%BF%E6%9E%97/1/ HTTP/1.1" 200 51
+INFO 2021-05-21 17:47:43,335 autoreload 240 D:\my_project\smart_medical_kit\leap\server\smart_medical_kit\apps\medicine\views.py changed, reloading.
+INFO 2021-05-21 17:47:44,687 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-05-21 17:47:48,068 autoreload 240 D:\my_project\smart_medical_kit\leap\server\smart_medical_kit\apps\medicine\views.py changed, reloading.
+INFO 2021-05-21 17:47:49,324 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-05-21 17:48:10,268 autoreload 240 D:\my_project\smart_medical_kit\leap\server\smart_medical_kit\apps\medicine\views.py changed, reloading.
+INFO 2021-05-21 17:48:11,577 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-05-21 17:48:59,423 autoreload 240 D:\my_project\smart_medical_kit\leap\server\smart_medical_kit\apps\medicine\views.py changed, reloading.
+INFO 2021-05-21 17:49:00,732 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-05-21 17:49:34,799 autoreload 240 D:\my_project\smart_medical_kit\leap\server\smart_medical_kit\apps\medicine\views.py changed, reloading.
+INFO 2021-05-21 17:49:36,104 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-05-21 17:50:31,125 autoreload 240 D:\my_project\smart_medical_kit\leap\server\smart_medical_kit\apps\medicine\views.py changed, reloading.
+INFO 2021-05-21 17:50:32,411 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-05-21 17:53:42,492 autoreload 617 Watching for file changes with StatReloader
+WARNING 2021-05-21 17:54:00,868 log 224 Not Found: /translate
+WARNING 2021-05-21 17:54:00,868 basehttp 157 "POST /translate HTTP/1.1" 404 6085
+INFO 2021-05-21 17:54:49,639 autoreload 617 Watching for file changes with StatReloader
+ERROR 2021-05-21 17:54:52,515 log 224 Internal Server Error: /translate
+Traceback (most recent call last):
+  File "C:\Users\SunShineGO\Envs\django_3.8.2\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\SunShineGO\Envs\django_3.8.2\lib\site-packages\django\utils\deprecation.py", line 113, in __call__
+    response = self.process_request(request)
+  File "C:\Users\SunShineGO\Envs\django_3.8.2\lib\site-packages\django\middleware\common.py", line 54, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "C:\Users\SunShineGO\Envs\django_3.8.2\lib\site-packages\django\middleware\common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8000/translate/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR 2021-05-21 17:54:52,517 basehttp 157 "POST /translate HTTP/1.1" 500 72606
+INFO 2021-05-21 17:55:00,575 basehttp 157 "POST /translate/ HTTP/1.1" 200 8484
+INFO 2021-05-21 17:57:45,050 autoreload 240 D:\my_project\smart_medical_kit\leap\server\smart_medical_kit\apps\medicine\models.py changed, reloading.
+INFO 2021-05-21 17:57:46,388 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-05-21 18:00:29,651 autoreload 240 D:\my_project\smart_medical_kit\leap\server\smart_medical_kit\apps\medicine\views.py changed, reloading.
+INFO 2021-05-21 18:00:30,869 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-05-21 18:01:36,178 autoreload 240 D:\my_project\smart_medical_kit\leap\server\smart_medical_kit\apps\medicine\views.py changed, reloading.
+INFO 2021-05-21 18:01:37,397 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-05-21 18:03:12,904 autoreload 240 D:\my_project\smart_medical_kit\leap\server\smart_medical_kit\apps\medicine\views.py changed, reloading.
+INFO 2021-05-21 18:03:14,139 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-05-21 18:05:51,378 autoreload 240 D:\my_project\smart_medical_kit\leap\server\smart_medical_kit\apps\medicine\views.py changed, reloading.
+INFO 2021-05-21 18:05:52,671 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-05-21 18:07:33,789 autoreload 240 D:\my_project\smart_medical_kit\leap\server\smart_medical_kit\apps\medicine\views.py changed, reloading.
+INFO 2021-05-21 18:07:35,042 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-05-21 18:08:22,976 basehttp 157 "GET /test/ HTTP/1.1" 200 14
+ERROR 2021-05-21 18:09:44,214 log 224 Internal Server Error: /showmedical/1840707266/
+Traceback (most recent call last):
+  File "C:\Users\SunShineGO\Envs\django_3.8.2\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\SunShineGO\Envs\django_3.8.2\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\SunShineGO\Envs\django_3.8.2\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\SunShineGO\Envs\django_3.8.2\lib\site-packages\django\views\generic\base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\my_project\smart_medical_kit\leap\server\smart_medical_kit\apps\medicine\views.py", line 142, in get
+    medicines_list_in['num'] = m.medicalkit
+TypeError: list indices must be integers or slices, not str
+ERROR 2021-05-21 18:09:44,216 basehttp 157 "GET /showmedical/1840707266/ HTTP/1.1" 500 79797
+INFO 2021-05-21 18:11:00,640 autoreload 240 D:\my_project\smart_medical_kit\leap\server\smart_medical_kit\apps\medicine\views.py changed, reloading.
+INFO 2021-05-21 18:11:01,930 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-05-21 18:11:05,771 basehttp 157 "GET /showmedical/1840707266/ HTTP/1.1" 200 932
+INFO 2021-05-21 18:17:32,687 autoreload 240 D:\my_project\smart_medical_kit\leap\server\smart_medical_kit\apps\medicine\views.py changed, reloading.
+INFO 2021-05-21 18:17:34,007 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-05-21 18:17:45,607 basehttp 157 "PUT /medical/bbb/1840707266/1/ HTTP/1.1" 200 29
+INFO 2021-05-21 23:52:43,944 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-05-21 23:54:00,707 basehttp 157 "PUT /medical/bbb/1840707266/1/ HTTP/1.1" 200 29
+INFO 2021-05-21 23:55:06,516 basehttp 157 "PUT /medical/bbb/1840707266/1/ HTTP/1.1" 200 29
+INFO 2021-05-21 23:56:07,270 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-05-21 23:56:16,234 basehttp 157 "PUT /medical/bbb/1840707266/1/ HTTP/1.1" 200 29
+INFO 2021-05-22 00:14:21,155 autoreload 240 D:\my_project\smart_medical_kit\leap\server\smart_medical_kit\apps\medicine\views.py changed, reloading.
+INFO 2021-05-22 00:14:22,416 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-05-22 00:16:26,257 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-05-22 00:17:11,616 basehttp 157 "PUT /medical/bbb/1840707266/1/ HTTP/1.1" 200 29
+INFO 2021-05-27 20:42:23,882 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-05-27 20:42:34,788 basehttp 157 "GET /test HTTP/1.1" 301 0
+INFO 2021-05-27 20:42:34,802 basehttp 157 "GET /test/ HTTP/1.1" 200 14
+WARNING 2021-05-27 20:42:35,210 log 224 Not Found: /favicon.ico
+WARNING 2021-05-27 20:42:35,210 basehttp 157 "GET /favicon.ico HTTP/1.1" 404 6073
+INFO 2021-05-27 20:43:24,850 basehttp 157 "GET /usercollect?token=1840707266 HTTP/1.1" 301 0
+ERROR 2021-05-27 20:43:29,761 log 224 Internal Server Error: /usercollect/
+Traceback (most recent call last):
+  File "C:\Users\SunShineGO\Envs\django_3.8.2\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\SunShineGO\Envs\django_3.8.2\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\SunShineGO\Envs\django_3.8.2\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\SunShineGO\Envs\django_3.8.2\lib\site-packages\django\views\generic\base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\my_project\smart_medical_kit\leap\server\smart_medical_kit\apps\backstage\views.py", line 216, in get
+    return http.JsonResponse({'code': RETCODE.OK, 'errmsg': 'ok', 'data': data_dict})
+  File "C:\Users\SunShineGO\Envs\django_3.8.2\lib\site-packages\django\http\response.py", line 567, in __init__
+    data = json.dumps(data, cls=encoder, **json_dumps_params)
+  File "d:\python3.8.2\lib\json\__init__.py", line 234, in dumps
+    return cls(
+  File "d:\python3.8.2\lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "d:\python3.8.2\lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "C:\Users\SunShineGO\Envs\django_3.8.2\lib\site-packages\django\core\serializers\json.py", line 105, in default
+    return super().default(o)
+  File "d:\python3.8.2\lib\json\encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type Medicine_user is not JSON serializable
+ERROR 2021-05-27 20:43:29,763 basehttp 157 "GET /usercollect/?token=1840707266 HTTP/1.1" 500 103204
+INFO 2021-05-27 20:46:47,624 autoreload 240 D:\my_project\smart_medical_kit\leap\server\smart_medical_kit\apps\backstage\views.py changed, reloading.
+INFO 2021-05-27 20:46:48,849 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-05-27 20:46:50,362 basehttp 157 "GET /usercollect?token=1840707266 HTTP/1.1" 301 0
+INFO 2021-05-27 20:46:51,932 basehttp 157 "GET /usercollect/?token=1840707266 HTTP/1.1" 200 118
+INFO 2021-05-27 20:48:23,085 autoreload 240 D:\my_project\smart_medical_kit\leap\server\smart_medical_kit\apps\backstage\views.py changed, reloading.
+INFO 2021-05-27 20:48:24,304 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-05-27 20:49:08,736 autoreload 240 D:\my_project\smart_medical_kit\leap\server\smart_medical_kit\apps\backstage\views.py changed, reloading.
+INFO 2021-05-27 20:49:09,957 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-05-27 20:50:54,945 autoreload 240 D:\my_project\smart_medical_kit\leap\server\smart_medical_kit\apps\backstage\views.py changed, reloading.
+INFO 2021-05-27 20:50:56,148 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-05-27 20:51:04,100 autoreload 240 D:\my_project\smart_medical_kit\leap\server\smart_medical_kit\apps\backstage\views.py changed, reloading.
+INFO 2021-05-27 20:51:05,306 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-05-27 20:51:08,527 basehttp 157 "GET /usercollect?token=1840707266 HTTP/1.1" 301 0
+INFO 2021-05-27 20:51:08,625 basehttp 157 "GET /usercollect/?token=1840707266 HTTP/1.1" 200 654
+ERROR 2021-05-27 20:57:13,245 views 196 Field 'height' expected a number but got '1.70'.
+INFO 2021-05-27 20:57:15,179 basehttp 157 "PUT /loginORcreate/ HTTP/1.1" 200 54
+INFO 2021-05-27 20:58:26,827 basehttp 157 "PUT /loginORcreate/ HTTP/1.1" 200 51
+INFO 2021-05-27 21:00:32,864 basehttp 157 "PUT /loginORcreate/ HTTP/1.1" 200 51
+INFO 2021-05-27 21:26:51,716 autoreload 240 D:\my_project\smart_medical_kit\leap\server\smart_medical_kit\smart_medical_kit\settings.py changed, reloading.
+INFO 2021-05-27 21:26:52,957 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-05-27 21:27:12,389 autoreload 240 D:\my_project\smart_medical_kit\leap\server\smart_medical_kit\smart_medical_kit\settings.py changed, reloading.
+INFO 2021-05-27 21:27:13,634 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-05-27 21:31:29,702 basehttp 157 "GET /test/ HTTP/1.1" 200 14
+INFO 2021-05-27 21:32:33,554 autoreload 240 D:\my_project\smart_medical_kit\leap\server\smart_medical_kit\smart_medical_kit\settings.py changed, reloading.
+INFO 2021-05-27 21:32:34,781 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-05-27 21:33:12,971 autoreload 240 D:\my_project\smart_medical_kit\leap\server\smart_medical_kit\smart_medical_kit\settings.py changed, reloading.
+INFO 2021-05-27 21:33:14,272 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-05-27 21:42:54,478 autoreload 240 D:\my_project\smart_medical_kit\leap\server\smart_medical_kit\smart_medical_kit\settings.py changed, reloading.
+INFO 2021-05-27 21:42:55,817 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-05-27 21:46:09,297 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-05-27 21:46:42,733 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-05-27 21:47:22,007 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-05-27 21:47:26,616 basehttp 157 "GET /test/ HTTP/1.1" 200 14
+INFO 2021-05-27 21:47:43,537 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-05-27 21:47:48,310 basehttp 157 "GET /test/ HTTP/1.1" 200 14
+INFO 2021-05-27 21:49:30,935 basehttp 157 "GET /test/ HTTP/1.1" 200 14
+INFO 2021-05-27 23:38:45,678 autoreload 240 D:\my_project\smart_medical_kit\leap\server\smart_medical_kit\smart_medical_kit\settings.py changed, reloading.
+INFO 2021-05-27 23:38:47,070 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-05-27 23:39:49,418 autoreload 240 D:\my_project\smart_medical_kit\leap\server\smart_medical_kit\smart_medical_kit\settings.py changed, reloading.
+INFO 2021-05-27 23:39:50,683 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-05-27 23:43:41,949 basehttp 157 "GET /test/ HTTP/1.1" 200 14
+INFO 2021-05-27 23:55:08,588 autoreload 240 D:\my_project\smart_medical_kit\leap\server\smart_medical_kit\smart_medical_kit\settings.py changed, reloading.
+INFO 2021-05-27 23:55:09,915 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-05-27 23:55:53,460 autoreload 240 D:\my_project\smart_medical_kit\leap\server\smart_medical_kit\smart_medical_kit\settings.py changed, reloading.
+INFO 2021-05-27 23:55:54,835 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-05-27 23:56:15,386 autoreload 240 D:\my_project\smart_medical_kit\leap\server\smart_medical_kit\smart_medical_kit\settings.py changed, reloading.
+INFO 2021-05-27 23:56:16,709 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-05-27 23:56:26,801 autoreload 240 D:\my_project\smart_medical_kit\leap\server\smart_medical_kit\smart_medical_kit\settings.py changed, reloading.
+INFO 2021-05-27 23:56:28,061 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-05-27 23:56:54,008 basehttp 157 "GET /test/ HTTP/1.1" 200 14
+INFO 2021-05-28 00:08:32,702 basehttp 157 "GET /test/ HTTP/1.1" 200 14
+INFO 2021-05-28 00:32:21,486 autoreload 240 D:\my_project\smart_medical_kit\leap\server\smart_medical_kit\smart_medical_kit\settings.py changed, reloading.
+INFO 2021-05-28 00:32:22,820 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-05-28 00:33:14,729 autoreload 240 D:\my_project\smart_medical_kit\leap\server\smart_medical_kit\smart_medical_kit\settings.py changed, reloading.
+INFO 2021-05-28 00:33:16,082 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-05-28 00:33:58,638 autoreload 240 D:\my_project\smart_medical_kit\leap\server\smart_medical_kit\smart_medical_kit\settings.py changed, reloading.
+INFO 2021-05-28 00:34:00,081 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-05-28 11:25:24,721 autoreload 240 D:\my_project\smart_medical_kit\leap\server\smart_medical_kit\apps\medicalkit\views.py changed, reloading.
+INFO 2021-05-28 11:25:33,016 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-05-28 11:26:09,613 autoreload 240 D:\my_project\smart_medical_kit\leap\server\smart_medical_kit\apps\medicalkit\views.py changed, reloading.
+INFO 2021-05-28 11:26:11,045 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-05-28 11:26:40,061 autoreload 240 D:\my_project\smart_medical_kit\leap\server\smart_medical_kit\apps\medicalkit\views.py changed, reloading.
+INFO 2021-05-28 11:26:41,456 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-05-28 11:27:24,264 basehttp 157 "GET /test/ HTTP/1.1" 200 14
+INFO 2021-05-28 11:30:12,479 autoreload 240 D:\my_project\smart_medical_kit\leap\server\smart_medical_kit\apps\medicalkit\views.py changed, reloading.
+INFO 2021-05-28 11:30:14,088 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-05-28 11:30:15,560 basehttp 157 "GET /test/ HTTP/1.1" 200 14
+INFO 2021-05-28 11:31:04,039 autoreload 240 D:\my_project\smart_medical_kit\leap\server\smart_medical_kit\smart_medical_kit\settings.py changed, reloading.
+INFO 2021-05-28 11:31:05,393 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-05-28 11:31:21,892 autoreload 240 D:\my_project\smart_medical_kit\leap\server\smart_medical_kit\smart_medical_kit\settings.py changed, reloading.
+INFO 2021-05-28 11:31:23,368 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-05-28 11:31:41,807 autoreload 240 D:\my_project\smart_medical_kit\leap\server\smart_medical_kit\smart_medical_kit\settings.py changed, reloading.
+INFO 2021-05-28 11:31:43,165 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-05-28 11:31:44,659 basehttp 157 "GET /test/ HTTP/1.1" 200 14
+INFO 2021-05-28 11:32:11,257 autoreload 240 D:\my_project\smart_medical_kit\leap\server\smart_medical_kit\smart_medical_kit\settings.py changed, reloading.
+INFO 2021-05-28 11:32:13,131 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-05-28 11:32:27,364 autoreload 240 D:\my_project\smart_medical_kit\leap\server\smart_medical_kit\smart_medical_kit\settings.py changed, reloading.
+INFO 2021-05-28 11:32:28,684 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-05-28 11:32:47,153 autoreload 240 D:\my_project\smart_medical_kit\leap\server\smart_medical_kit\smart_medical_kit\settings.py changed, reloading.
+INFO 2021-05-28 11:32:48,578 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-05-28 11:32:50,278 basehttp 157 "GET /test/ HTTP/1.1" 200 14
+INFO 2021-05-28 11:36:16,760 autoreload 240 D:\my_project\smart_medical_kit\leap\server\smart_medical_kit\smart_medical_kit\settings.py changed, reloading.
+INFO 2021-05-28 11:36:18,426 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-05-29 08:03:04,613 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-05-29 08:03:46,533 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-05-29 08:04:25,607 autoreload 617 Watching for file changes with StatReloader
+WARNING 2021-05-29 08:04:27,301 log 230 Not Found: /
+WARNING 2021-05-29 08:04:27,384 basehttp 157 "GET / HTTP/1.1" 404 6193
+INFO 2021-05-29 08:04:34,279 basehttp 157 "GET /live?token=1840707266 HTTP/1.1" 301 0
+WARNING 2021-05-29 08:04:34,312 base 103 Method Not Allowed (GET): /live/
+WARNING 2021-05-29 08:04:34,313 log 230 Method Not Allowed: /live/
+WARNING 2021-05-29 08:04:34,314 basehttp 157 "GET /live/?token=1840707266 HTTP/1.1" 405 0
+INFO 2021-05-29 08:04:47,437 basehttp 157 "GET /test/ HTTP/1.1" 200 14
+INFO 2021-05-29 08:04:53,735 basehttp 157 "GET /live HTTP/1.1" 301 0
+WARNING 2021-05-29 08:04:53,751 base 103 Method Not Allowed (GET): /live/
+WARNING 2021-05-29 08:04:53,752 log 230 Method Not Allowed: /live/
+WARNING 2021-05-29 08:04:53,753 basehttp 157 "GET /live/ HTTP/1.1" 405 0
+ERROR 2021-05-29 08:05:46,196 log 230 Internal Server Error: /live
+Traceback (most recent call last):
+  File "/Users/mac/py3_env/medical/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/Users/mac/py3_env/medical/lib/python3.7/site-packages/django/utils/deprecation.py", line 113, in __call__
+    response = self.process_request(request)
+  File "/Users/mac/py3_env/medical/lib/python3.7/site-packages/django/middleware/common.py", line 54, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "/Users/mac/py3_env/medical/lib/python3.7/site-packages/django/middleware/common.py", line 94, in get_full_path_with_slash
+    'url': request.get_host() + new_path,
+RuntimeError: You called this URL via PUT, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining PUT data. Change your form to point to 127.0.0.1:8000/live/?token=1840707266 (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR 2021-05-29 08:05:46,201 basehttp 157 "PUT /live?token=1840707266 HTTP/1.1" 500 69320
+ERROR 2021-05-29 08:05:56,609 log 230 Internal Server Error: /live
+Traceback (most recent call last):
+  File "/Users/mac/py3_env/medical/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/Users/mac/py3_env/medical/lib/python3.7/site-packages/django/utils/deprecation.py", line 113, in __call__
+    response = self.process_request(request)
+  File "/Users/mac/py3_env/medical/lib/python3.7/site-packages/django/middleware/common.py", line 54, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "/Users/mac/py3_env/medical/lib/python3.7/site-packages/django/middleware/common.py", line 94, in get_full_path_with_slash
+    'url': request.get_host() + new_path,
+RuntimeError: You called this URL via PUT, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining PUT data. Change your form to point to 127.0.0.1:8000/live/?token=1840707266/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR 2021-05-29 08:05:56,610 basehttp 157 "PUT /live?token=1840707266/ HTTP/1.1" 500 69333
+INFO 2021-05-29 08:06:44,915 autoreload 240 /Users/mac/Desktop/medical/leap/server/smart_medical_kit/apps/backstage/views.py changed, reloading.
+INFO 2021-05-29 08:06:46,787 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-05-29 08:07:06,174 autoreload 617 Watching for file changes with StatReloader
+WARNING 2021-05-29 08:07:09,657 log 230 Not Found: /
+WARNING 2021-05-29 08:07:09,723 basehttp 157 "GET / HTTP/1.1" 404 6193
+ERROR 2021-05-29 08:07:34,720 log 230 Internal Server Error: /live/
+Traceback (most recent call last):
+  File "/Users/mac/py3_env/medical/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/Users/mac/py3_env/medical/lib/python3.7/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/mac/py3_env/medical/lib/python3.7/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/mac/py3_env/medical/lib/python3.7/site-packages/django/views/generic/base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/mac/Desktop/medical/leap/server/smart_medical_kit/apps/backstage/views.py", line 242, in put
+    user = Users.objects.get(token=token)
+  File "/Users/mac/py3_env/medical/lib/python3.7/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/mac/py3_env/medical/lib/python3.7/site-packages/django/db/models/query.py", line 431, in get
+    self.model._meta.object_name
+apps.user.models.Users.DoesNotExist: Users matching query does not exist.
+ERROR 2021-05-29 08:07:34,730 basehttp 157 "PUT /live/ HTTP/1.1" 500 81824
+INFO 2021-05-29 08:12:29,067 autoreload 617 Watching for file changes with StatReloader
+WARNING 2021-05-29 08:12:51,263 log 230 Not Found: /
+WARNING 2021-05-29 08:12:51,271 basehttp 157 "GET / HTTP/1.1" 404 6193
+INFO 2021-05-29 08:13:24,896 basehttp 157 "PUT /live/ HTTP/1.1" 200 66
+INFO 2021-05-29 08:13:39,778 basehttp 157 "PUT /live/ HTTP/1.1" 200 59
+INFO 2021-05-29 08:17:14,683 autoreload 240 /Users/mac/Desktop/medical/leap/server/smart_medical_kit/apps/backstage/views.py changed, reloading.
+INFO 2021-05-29 08:17:16,772 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-05-29 08:17:57,662 autoreload 240 /Users/mac/Desktop/medical/leap/server/smart_medical_kit/apps/backstage/views.py changed, reloading.
+INFO 2021-05-29 08:18:00,125 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-05-29 08:18:04,029 basehttp 157 "PUT /live/ HTTP/1.1" 200 59
+INFO 2021-05-29 08:19:07,352 autoreload 240 /Users/mac/Desktop/medical/leap/server/smart_medical_kit/apps/backstage/views.py changed, reloading.
+INFO 2021-05-29 08:19:09,350 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-05-29 08:19:15,817 basehttp 157 "PUT /live/ HTTP/1.1" 200 53
+INFO 2021-05-29 08:19:22,109 basehttp 157 "PUT /live/ HTTP/1.1" 200 59
+INFO 2021-05-29 08:21:17,204 autoreload 240 /Users/mac/Desktop/medical/leap/server/smart_medical_kit/apps/backstage/views.py changed, reloading.
+INFO 2021-05-29 08:21:18,959 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-05-29 08:22:25,906 autoreload 240 /Users/mac/Desktop/medical/leap/server/smart_medical_kit/apps/backstage/views.py changed, reloading.
+INFO 2021-05-29 08:22:28,979 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-05-29 08:22:36,632 basehttp 157 "GET /test/ HTTP/1.1" 200 14
+INFO 2021-05-29 08:22:58,792 basehttp 157 "GET /live/?token=1840707266 HTTP/1.1" 200 40
+INFO 2021-05-29 08:23:13,480 basehttp 157 "PUT /live/ HTTP/1.1" 200 59
+INFO 2021-05-29 08:23:17,502 basehttp 157 "GET /live/?token=1840707266 HTTP/1.1" 200 40
+INFO 2021-05-29 08:26:18,719 autoreload 240 /Users/mac/Desktop/medical/leap/server/smart_medical_kit/apps/backstage/views.py changed, reloading.
+INFO 2021-05-29 08:26:19,958 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-05-31 13:11:46,115 autoreload 617 Watching for file changes with StatReloader
+WARNING 2021-05-31 13:11:48,432 log 230 Not Found: /
+WARNING 2021-05-31 13:11:48,436 basehttp 157 "GET / HTTP/1.1" 404 6193
+INFO 2021-05-31 13:11:53,650 basehttp 157 "GET /test/ HTTP/1.1" 200 14
+WARNING 2021-05-31 13:11:57,408 log 230 Not Found: /test.html
+WARNING 2021-05-31 13:11:57,410 basehttp 157 "GET /test.html HTTP/1.1" 404 6238
+INFO 2021-05-31 13:12:13,926 basehttp 157 "GET /static/test.html HTTP/1.1" 200 152
+WARNING 2021-05-31 13:14:08,990 basehttp 157 "GET /static/index.html HTTP/1.1" 404 1656
+INFO 2021-05-31 13:14:18,806 basehttp 157 "GET /static/test.html HTTP/1.1" 304 0
+INFO 2021-05-31 13:14:36,393 basehttp 157 "GET /static/test.html HTTP/1.1" 304 0
+INFO 2021-05-31 13:15:39,122 autoreload 617 Watching for file changes with StatReloader
+WARNING 2021-05-31 13:15:40,780 log 230 Not Found: /
+WARNING 2021-05-31 13:15:40,781 basehttp 157 "GET / HTTP/1.1" 404 6193
+WARNING 2021-05-31 13:15:44,844 log 230 Not Found: /static/test.html
+WARNING 2021-05-31 13:15:44,845 basehttp 157 "GET /static/test.html HTTP/1.1" 404 6259
+INFO 2021-05-31 13:16:03,938 autoreload 617 Watching for file changes with StatReloader
+WARNING 2021-05-31 13:16:05,479 log 230 Not Found: /
+WARNING 2021-05-31 13:16:05,485 basehttp 157 "GET / HTTP/1.1" 404 6193
+WARNING 2021-05-31 13:16:09,323 log 230 Not Found: /static/test.html
+WARNING 2021-05-31 13:16:09,324 basehttp 157 "GET /static/test.html HTTP/1.1" 404 6259
+INFO 2021-05-31 13:16:16,682 autoreload 240 /Users/mac/Desktop/medical/leap/server/smart_medical_kit/smart_medical_kit/settings.py changed, reloading.
+INFO 2021-05-31 13:16:18,096 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-05-31 13:16:21,856 basehttp 157 "GET /static/test.html HTTP/1.1" 200 152
+INFO 2021-06-16 20:30:46,436 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-06-16 20:32:02,294 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-06-16 20:32:10,816 basehttp 157 "GET /map HTTP/1.1" 301 0
+ERROR 2021-06-16 20:32:11,313 log 224 Internal Server Error: /map/
+Traceback (most recent call last):
+  File "C:\Users\SunShineGO\Envs\django_3.8.2\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\SunShineGO\Envs\django_3.8.2\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\SunShineGO\Envs\django_3.8.2\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\SunShineGO\Envs\django_3.8.2\lib\site-packages\django\views\generic\base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\my_project\smart_medical_kit\leap\server\smart_medical_kit\apps\backstage\views.py", line 325, in get
+    a.main()
+  File "D:\my_project\smart_medical_kit\leap\server\smart_medical_kit\apps\backstage\views.py", line 319, in main
+    geo.render("../../temlates/map.html")
+  File "C:\Users\SunShineGO\Envs\django_3.8.2\lib\site-packages\pyecharts\charts\base.py", line 65, in render
+    return engine.render(self, path, template_name, env, **kwargs)
+  File "C:\Users\SunShineGO\Envs\django_3.8.2\lib\site-packages\pyecharts\render\engine.py", line 71, in render
+    RenderEngine(env).render_chart_to_file(
+  File "C:\Users\SunShineGO\Envs\django_3.8.2\lib\site-packages\pyecharts\render\engine.py", line 55, in render_chart_to_file
+    write_utf8_html_file(path, html)
+  File "C:\Users\SunShineGO\Envs\django_3.8.2\lib\site-packages\pyecharts\render\engine.py", line 14, in write_utf8_html_file
+    with open(file_name, "w+", encoding="utf-8") as html_file:
+FileNotFoundError: [Errno 2] No such file or directory: '../../temlates/map.html'
+ERROR 2021-06-16 20:32:11,316 basehttp 157 "GET /map/ HTTP/1.1" 500 120140
+WARNING 2021-06-16 20:32:12,355 log 224 Not Found: /favicon.ico
+WARNING 2021-06-16 20:32:12,357 basehttp 157 "GET /favicon.ico HTTP/1.1" 404 6407
+INFO 2021-06-16 20:33:19,408 autoreload 240 D:\my_project\smart_medical_kit\leap\server\smart_medical_kit\apps\backstage\views.py changed, reloading.
+INFO 2021-06-16 20:33:20,136 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-06-16 20:34:23,746 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-06-16 20:34:27,453 basehttp 157 "GET /map/ HTTP/1.1" 200 12034
+INFO 2021-06-16 21:05:20,544 autoreload 240 D:\my_project\smart_medical_kit\leap\server\smart_medical_kit\apps\backstage\views.py changed, reloading.
+INFO 2021-06-16 21:05:21,722 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-06-16 21:05:52,349 autoreload 240 D:\my_project\smart_medical_kit\leap\server\smart_medical_kit\apps\backstage\views.py changed, reloading.
+INFO 2021-06-16 21:05:53,041 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-06-16 21:06:38,609 basehttp 157 "GET /map/ HTTP/1.1" 200 12034
+ERROR 2021-06-16 21:07:10,903 log 224 Internal Server Error: /map/
+Traceback (most recent call last):
+  File "C:\Users\SunShineGO\Envs\django_3.8.2\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\SunShineGO\Envs\django_3.8.2\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\SunShineGO\Envs\django_3.8.2\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\SunShineGO\Envs\django_3.8.2\lib\site-packages\django\views\generic\base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\my_project\smart_medical_kit\leap\server\smart_medical_kit\apps\backstage\views.py", line 323, in get
+    return render(request, 'map.html')
+  File "C:\Users\SunShineGO\Envs\django_3.8.2\lib\site-packages\django\shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\SunShineGO\Envs\django_3.8.2\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\SunShineGO\Envs\django_3.8.2\lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: map.html
+ERROR 2021-06-16 21:07:10,921 basehttp 157 "GET /map/ HTTP/1.1" 500 90851
+ERROR 2021-06-16 21:07:22,902 log 224 Internal Server Error: /map/
+Traceback (most recent call last):
+  File "C:\Users\SunShineGO\Envs\django_3.8.2\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\SunShineGO\Envs\django_3.8.2\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\SunShineGO\Envs\django_3.8.2\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\SunShineGO\Envs\django_3.8.2\lib\site-packages\django\views\generic\base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\my_project\smart_medical_kit\leap\server\smart_medical_kit\apps\backstage\views.py", line 323, in get
+    return render(request, 'map.html')
+  File "C:\Users\SunShineGO\Envs\django_3.8.2\lib\site-packages\django\shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\SunShineGO\Envs\django_3.8.2\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\SunShineGO\Envs\django_3.8.2\lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: map.html
+ERROR 2021-06-16 21:07:22,903 basehttp 157 "GET /map/ HTTP/1.1" 500 90851
+ERROR 2021-06-16 21:07:27,475 log 224 Internal Server Error: /map/
+Traceback (most recent call last):
+  File "C:\Users\SunShineGO\Envs\django_3.8.2\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\SunShineGO\Envs\django_3.8.2\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\SunShineGO\Envs\django_3.8.2\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\SunShineGO\Envs\django_3.8.2\lib\site-packages\django\views\generic\base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\my_project\smart_medical_kit\leap\server\smart_medical_kit\apps\backstage\views.py", line 323, in get
+    return render(request, 'map.html')
+  File "C:\Users\SunShineGO\Envs\django_3.8.2\lib\site-packages\django\shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\SunShineGO\Envs\django_3.8.2\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\SunShineGO\Envs\django_3.8.2\lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: map.html
+ERROR 2021-06-16 21:07:27,476 basehttp 157 "GET /map/ HTTP/1.1" 500 90851
+ERROR 2021-06-16 21:07:38,218 log 224 Internal Server Error: /map/
+Traceback (most recent call last):
+  File "C:\Users\SunShineGO\Envs\django_3.8.2\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\SunShineGO\Envs\django_3.8.2\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\SunShineGO\Envs\django_3.8.2\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\SunShineGO\Envs\django_3.8.2\lib\site-packages\django\views\generic\base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\my_project\smart_medical_kit\leap\server\smart_medical_kit\apps\backstage\views.py", line 323, in get
+    return render(request, 'map.html')
+  File "C:\Users\SunShineGO\Envs\django_3.8.2\lib\site-packages\django\shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\SunShineGO\Envs\django_3.8.2\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\SunShineGO\Envs\django_3.8.2\lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: map.html
+ERROR 2021-06-16 21:07:38,219 basehttp 157 "GET /map/ HTTP/1.1" 500 90851
+ERROR 2021-06-16 21:08:15,951 log 224 Internal Server Error: /map/
+Traceback (most recent call last):
+  File "C:\Users\SunShineGO\Envs\django_3.8.2\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\SunShineGO\Envs\django_3.8.2\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\SunShineGO\Envs\django_3.8.2\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\SunShineGO\Envs\django_3.8.2\lib\site-packages\django\views\generic\base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\my_project\smart_medical_kit\leap\server\smart_medical_kit\apps\backstage\views.py", line 323, in get
+    # return render(request, 'map.html')
+  File "C:\Users\SunShineGO\Envs\django_3.8.2\lib\site-packages\django\shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\SunShineGO\Envs\django_3.8.2\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\SunShineGO\Envs\django_3.8.2\lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: map.html
+ERROR 2021-06-16 21:08:15,953 basehttp 157 "GET /map/ HTTP/1.1" 500 91170
+INFO 2021-06-16 21:08:16,031 autoreload 240 D:\my_project\smart_medical_kit\leap\server\smart_medical_kit\apps\backstage\views.py changed, reloading.
+INFO 2021-06-16 21:08:16,859 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-06-16 21:08:19,908 basehttp 157 "GET /map/ HTTP/1.1" 200 14
+INFO 2021-06-16 21:08:52,434 autoreload 240 D:\my_project\smart_medical_kit\leap\server\smart_medical_kit\apps\backstage\views.py changed, reloading.
+INFO 2021-06-16 21:08:53,109 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-06-16 21:09:02,382 basehttp 157 "GET /map/ HTTP/1.1" 200 14
+INFO 2021-06-16 21:09:50,011 basehttp 157 "GET /map/ HTTP/1.1" 200 14
+INFO 2021-06-16 21:09:50,412 autoreload 240 D:\my_project\smart_medical_kit\leap\server\smart_medical_kit\apps\backstage\views.py changed, reloading.
+INFO 2021-06-16 21:09:51,143 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-06-16 21:09:52,926 basehttp 157 "GET /map/ HTTP/1.1" 200 14
+INFO 2021-06-16 21:10:00,228 basehttp 157 "GET /map/ HTTP/1.1" 200 14
+INFO 2021-06-16 21:10:04,654 basehttp 157 "GET /map/ HTTP/1.1" 200 14
+INFO 2021-06-16 21:10:15,556 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-06-16 21:10:21,014 autoreload 240 D:\my_project\smart_medical_kit\leap\server\smart_medical_kit\apps\backstage\views.py changed, reloading.
+INFO 2021-06-16 21:10:22,464 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-06-16 21:10:53,651 basehttp 157 "GET /map/ HTTP/1.1" 200 14
+INFO 2021-06-16 21:11:10,510 basehttp 157 "GET /map/ HTTP/1.1" 200 14
+INFO 2021-06-16 21:11:10,777 autoreload 240 D:\my_project\smart_medical_kit\leap\server\smart_medical_kit\apps\backstage\views.py changed, reloading.
+INFO 2021-06-16 21:11:12,093 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-06-16 21:11:15,843 basehttp 157 "GET /map/ HTTP/1.1" 200 14
+INFO 2021-06-16 21:11:21,874 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-06-16 21:11:24,064 basehttp 157 "GET /map/ HTTP/1.1" 200 14
+INFO 2021-06-16 21:11:51,571 basehttp 157 "GET /map/ HTTP/1.1" 200 14
+INFO 2021-06-16 21:12:26,773 autoreload 240 D:\my_project\smart_medical_kit\leap\server\smart_medical_kit\apps\backstage\views.py changed, reloading.
+INFO 2021-06-16 21:12:28,263 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-06-16 21:12:39,808 autoreload 240 D:\my_project\smart_medical_kit\leap\server\smart_medical_kit\apps\backstage\views.py changed, reloading.
+INFO 2021-06-16 21:12:41,079 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-06-16 21:12:43,571 basehttp 157 "GET /map/ HTTP/1.1" 200 12034
+INFO 2021-06-16 23:13:00,464 autoreload 240 D:\my_project\smart_medical_kit\leap\server\smart_medical_kit\smart_medical_kit\settings.py changed, reloading.
+INFO 2021-06-16 23:13:02,868 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-06-16 23:13:21,007 autoreload 240 D:\my_project\smart_medical_kit\leap\server\smart_medical_kit\smart_medical_kit\settings.py changed, reloading.
+INFO 2021-06-16 23:13:22,403 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-06-16 23:13:39,072 autoreload 240 D:\my_project\smart_medical_kit\leap\server\smart_medical_kit\smart_medical_kit\settings.py changed, reloading.
+INFO 2021-06-16 23:13:40,469 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-06-16 23:14:43,378 autoreload 240 D:\my_project\smart_medical_kit\leap\server\smart_medical_kit\smart_medical_kit\settings.py changed, reloading.
+INFO 2021-06-16 23:14:45,046 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-06-17 00:26:04,911 autoreload 240 D:\my_project\smart_medical_kit\leap\server\smart_medical_kit\smart_medical_kit\settings.py changed, reloading.
+INFO 2021-06-17 00:26:06,518 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-06-17 00:28:42,459 autoreload 240 D:\my_project\smart_medical_kit\leap\server\smart_medical_kit\smart_medical_kit\settings.py changed, reloading.
+INFO 2021-06-17 00:28:43,921 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-06-17 00:29:16,387 autoreload 240 D:\my_project\smart_medical_kit\leap\server\smart_medical_kit\smart_medical_kit\settings.py changed, reloading.
+INFO 2021-06-17 00:29:17,765 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-06-17 00:30:13,296 autoreload 240 D:\my_project\smart_medical_kit\leap\server\smart_medical_kit\smart_medical_kit\settings.py changed, reloading.
+INFO 2021-06-17 00:30:14,661 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-06-17 00:55:57,762 autoreload 240 D:\my_project\smart_medical_kit\leap\server\smart_medical_kit\smart_medical_kit\settings.py changed, reloading.
+INFO 2021-06-17 00:55:59,123 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-06-17 01:27:50,637 autoreload 240 D:\my_project\smart_medical_kit\leap\server\smart_medical_kit\apps\backstage\views.py changed, reloading.
+INFO 2021-06-17 01:27:52,047 autoreload 617 Watching for file changes with StatReloader

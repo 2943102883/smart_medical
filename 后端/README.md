@@ -1,21 +1,21 @@
 
 
-
-
-# 后端部分
+# 后端服务器
 
 ![code](https://img.shields.io/badge/codecov-0%25-green)![build](https://img.shields.io/badge/build-django-red)![mode](https://img.shields.io/badge/mode-MVT-important)
 
 ## 主要功能：
 
 - 针对小程序的药品进行管理（完成）
-- 对传感器上传来的数据进行处理（完成）
+- 对传感器上传来的数据进行处理（待定）
 
 
 
 ## 安装
 
 使用django构建后端服务器，数据库使用mysql，数据来源于网络爬虫
+
+项目已经开始，已经完成了基础的功能，下一步则是与硬件交互 
 
 
 
@@ -73,13 +73,19 @@ CREATE DATABASE `medical` CHARACTER SET 'utf8'
 
 
 
-## API文档
+# API文档
 
 > 在本文档的API中，请求体中的数据需要以**`json`**格式发送到后端
 >
-> 线上API域名：api.sunshinego.online:9876
+> 所有的API本地IP为：172.16.176.120:8000
 >
-> 过段时间打算准备毕设了，线上的API接口就会关掉。没办法，服务器比较垃圾，同时只能跑一个程序
+> ​				 线上IP为：120.78.168.67:9876
+>
+> ​				线上API域名：api.sunshinego.online:9876
+
+## 微信小程序API文档
+
+
 
 ### 1、创建用户/用户登录
 
@@ -202,10 +208,10 @@ contacts	紧急联系人
 
 > 请求方式
 
-| 选项     | 方案                                          |
-| -------- | --------------------------------------------- |
-| 请求方法 | GET                                           |
-| 请求地址 | api.sunshinego.online:9876/medical/name/token |
+| 选项     | 方案                                              |
+| -------- | ------------------------------------------------- |
+| 请求方法 | GET                                               |
+| 请求地址 | api.sunshinego.online:9876/medical/name/token/num |
 
 > 请求参数：查询字符串参数以及路径参数
 
@@ -213,6 +219,7 @@ contacts	紧急联系人
 | ---------- | ------ | -------- | ------------------------------------ |
 | name       | string | 是       | 药品名称，本参数为***路径参数***     |
 | token      | string | 是       | 用户唯一标识，本参数为***路径参数*** |
+| num        | string | 是       | 选择添加药箱编号***路径参数***       |
 | category   | string | 否       | 药品类别                             |
 | introduce  | string | 否       | 药品简介                             |
 | suit       | string | 否       | 适应症状                             |
@@ -222,6 +229,10 @@ contacts	紧急联系人
 | taboo      | string | 否       | 禁忌                                 |
 | heed       | string | 否       | 注意事项                             |
 | savemethod | string | 否       | 保存方法                             |
+
+
+
+
 
 > 相应结果
 
@@ -236,10 +247,10 @@ contacts	紧急联系人
 
 > 请求方式
 
-| 选项     | 方案                                          |
-| -------- | --------------------------------------------- |
-| 请求方法 | PUT                                           |
-| 请求地址 | api.sunshinego.online:9876/medical/name/token |
+| 选项     | 方案                                              |
+| -------- | ------------------------------------------------- |
+| 请求方法 | PUT                                               |
+| 请求地址 | api.sunshinego.online:9876/medical/name/token/num |
 
 > 请求参数：请求体中（json）以及路径参数
 
@@ -248,6 +259,7 @@ contacts	紧急联系人
 | name       | string | 是       | 要修改的药品名，本参数为***路径参数***    |
 | newname    | string | 是       | 药品修改后的名字（如果不修改名字，传入0） |
 | token      | string | 是       | 用户唯一标识，本参数为***路径参数***      |
+| newnum     | string | 是       | 选择添加药箱编号                          |
 | category   | string | 否       | 药品类别                                  |
 | introduce  | string | 否       | 药品简介                                  |
 | suit       | string | 否       | 适应症状                                  |
@@ -291,58 +303,77 @@ contacts	紧急联系人
     "data": {
         "0": [
             {
-                "name": "1",
-                "category": "1",
-                "introduce": "1",
-                "suit": "1",
-                "bad": "1",
-                "life": 1,
-                "use": "1",
-                "taboo": "1",
-                "heed": "1",
-                "savemethod": "1"
+                "name": "阿司匹林",
+                "category": null,
+                "introduce": null,
+                "suit": null,
+                "bad": null,
+                "life": 5,
+                "use": null,
+                "taboo": null,
+                "heed": null,
+                "savemethod": null,
+                "num": 1
             }
         ],
         "1": [
             {
-                "name": "2",
-                "category": "2",
-                "introduce": "2",
-                "suit": "2",
-                "bad": "2",
-                "life": 2,
-                "use": "2",
-                "taboo": "2",
-                "heed": "2",
-                "savemethod": "2"
+                "name": "阿莫西林",
+                "category": null,
+                "introduce": null,
+                "suit": null,
+                "bad": null,
+                "life": 1,
+                "use": null,
+                "taboo": null,
+                "heed": null,
+                "savemethod": null,
+                "num": 1
             }
         ],
         "2": [
             {
-                "name": "3",
-                "category": "3",
-                "introduce": "3",
-                "suit": "3",
-                "bad": "3",
-                "life": 3,
-                "use": "3",
-                "taboo": "3",
-                "heed": "3",
-                "savemethod": "3"
+                "name": "奥美拉唑",
+                "category": "",
+                "introduce": "",
+                "suit": "",
+                "bad": "",
+                "life": 12,
+                "use": "",
+                "taboo": "",
+                "heed": "",
+                "savemethod": "",
+                "num": 1
             }
         ],
         "3": [
             {
-                "name": "4",
-                "category": "4",
-                "introduce": "4",
-                "suit": "4",
-                "bad": "4",
-                "life": 4,
-                "use": "4",
-                "taboo": "4",
-                "heed": "4",
-                "savemethod": "4"
+                "name": "aaaaa",
+                "category": "",
+                "introduce": "",
+                "suit": "",
+                "bad": "",
+                "life": 12,
+                "use": "",
+                "taboo": "",
+                "heed": "",
+                "savemethod": "",
+                "num": 1
+            }
+        ],
+        "4": [
+            {
+                "name": "bbb",
+                "category": null,
+                "introduce": null,
+                "suit": null,
+                "bad": null,
+                "life": null,
+                "use": null,
+                "taboo": null,
+                "heed": null,
+                "savemethod": null,
+                "num": 1
             }
         ]
     }
@@ -585,6 +616,295 @@ contacts	紧急联系人
 {
     "code": "1",
     "errmsg": "没有过期的药品"
+}
+```
+
+
+
+### 13、在线人数统计
+
+> 请求方式
+
+| 选项     | 方案                             |
+| -------- | -------------------------------- |
+| 请求方法 |                                  |
+| 请求地址 | api.sunshinego.online:9876/live/ |
+
+> 请求参数：请求体中
+>
+> condition为login是登录；exit为登出
+
+| 参数名    | 类型   | 是否必传 | 说明         |
+| --------- | ------ | -------- | ------------ |
+| token     | string | 是       | 用户标识     |
+| condition |        | 是       | 区分登录登出 |
+
+> 相应结果
+>
+
+```json
+{
+    "code": "0",
+    "errmsg": "test1111登录成功"
+}
+```
+
+```json
+{
+    "code": "0",
+    "errmsg": "test1111登出成功"
+}
+```
+
+
+
+### 14、全国疫情数据可视化大屏
+
+> 请求方式
+
+| 选项     | 方案                            |
+| -------- | ------------------------------- |
+| 请求方法 | GET                             |
+| 请求地址 | api.sunshinego.online:9876/mao/ |
+
+> 相应结果
+
+![image-20210706234830899](C:\Users\SunShineGO\AppData\Roaming\Typora\typora-user-images\image-20210706234830899.png)
+
+## 后台API文档
+
+### 1、注册人数
+
+> 请求方式
+
+| 选项     | 方案                               |
+| -------- | ---------------------------------- |
+| 请求方法 | GET                                |
+| 请求地址 | api.sunshinego.online:9876/usernum |
+
+> 请求参数：无
+
+> 相应结果
+>
+
+```json
+{
+    "code": "0",
+    "num": 1
+}
+```
+
+
+
+### 2、会员信息管理（删）
+
+> 请求方式
+
+| 选项     | 方案                            |
+| -------- | ------------------------------- |
+| 请求方法 | DELETE                          |
+| 请求地址 | api.sunshinego.online:9876/user |
+
+> 请求参数：路径参数
+
+| 参数名 | 类型   | 是否必传 | 说明     |
+| ------ | ------ | -------- | -------- |
+| token  | string | 是       | 用户标识 |
+
+> 相应结果
+>
+> 有过期的药品
+
+```json
+{
+    "code": "0",
+    "errmsg": "删除成功",
+}
+```
+
+
+
+### 3、会员信息管理（改）
+
+> 请求方式
+
+| 选项     | 方案                            |
+| -------- | ------------------------------- |
+| 请求方法 | PUT                             |
+| 请求地址 | api.sunshinego.online:9876/user |
+
+> 请求参数：路径参数
+
+| 参数名 | 类型   | 是否必传 | 说明     |
+| ------ | ------ | -------- | -------- |
+| token  | string | 是       | 用户标识 |
+
+> 相应结果
+>
+> 有过期的药品
+
+> 
+
+```json
+{
+    "code": "0",
+    "errmsg": "修改成功",
+}
+```
+
+
+
+### 4、会员信息管理（查）
+
+> 请求方式
+
+| 选项     | 方案                            |
+| -------- | ------------------------------- |
+| 请求方法 | GET                             |
+| 请求地址 | api.sunshinego.online:9876/user |
+
+> 请求参数：路径参数
+
+| 参数名 | 类型   | 是否必传 | 说明     |
+| ------ | ------ | -------- | -------- |
+| token  | string | 否       | 用户标识 |
+
+> 相应结果
+>
+> 有过期的药品
+
+
+
+> 注：如果没有传入token，默认返回所有用户信息
+
+```json
+{
+    "code": "0",
+    "errmsg": "ok",
+    "data": {
+        "1": {
+            "sex": null,
+            "age": 55,
+            "weigth": null,
+            "height": null,
+            "health": null,
+            "contacts": null,
+            "creat_data": "0000-00-00",
+            "name": null,
+            "birthday": null,
+            "phone": null
+        }
+    }
+}
+```
+
+### 5、用户收藏药品信息
+
+> 请求方式
+
+| 选项     | 方案                                   |
+| -------- | -------------------------------------- |
+| 请求方法 | GET                                    |
+| 请求地址 | api.sunshinego.online:9876/usercollect |
+
+> 请求参数：路径参数
+
+| 参数名 | 类型   | 是否必传 | 说明     |
+| ------ | ------ | -------- | -------- |
+| token  | string | 是       | 用户标识 |
+
+> 响应结果
+>
+
+```json
+{
+    "code": "0",
+    "errmsg": "ok",
+    "data": {
+        "1": {
+            "name": "阿司匹林",
+            "category": "",
+            "introduce": "",
+            "creat_data": "2021-05-08",
+            "suit": "",
+            "bad": "",
+            "life": 5,
+            "use": "",
+            "taboo": "hh",
+            "heed": "",
+            "savemethod": "",
+            "medicalkit": 1
+        },
+        "2": {
+            "name": "阿莫西林",
+            "category": "",
+            "introduce": "",
+            "creat_data": "2021-03-08",
+            "suit": "",
+            "bad": "",
+            "life": 1,
+            "use": "sss",
+            "taboo": "",
+            "heed": "aa",
+            "savemethod": "",
+            "medicalkit": 1
+        },
+        "3": {
+            "name": "test",
+            "category": "",
+            "introduce": "",
+            "creat_data": "2021-05-21",
+            "suit": "",
+            "bad": "",
+            "life": 12,
+            "use": "",
+            "taboo": "",
+            "heed": "",
+            "savemethod": "",
+            "medicalkit": 1
+        },
+        "4": {
+            "name": "1",
+            "category": "1",
+            "introduce": "01",
+            "creat_data": "2021-05-28",
+            "suit": "11",
+            "bad": "11",
+            "life": 1,
+            "use": "1",
+            "taboo": "11",
+            "heed": "1",
+            "savemethod": "1",
+            "medicalkit": 3
+        }
+    }
+}
+```
+
+
+
+### 6、在线人数统计
+
+> 请求方式
+
+| 选项     | 方案                            |
+| -------- | ------------------------------- |
+| 请求方法 | GET                             |
+| 请求地址 | api.sunshinego.online:9876/live |
+
+> 请求参数：路径参数
+
+| 参数名 | 类型   | 是否必传 | 说明     |
+| ------ | ------ | -------- | -------- |
+| token  | string | 是       | 用户标识 |
+
+> 响应结果
+
+```json
+{
+    "code": "0",
+    "errmsg": "ok",
+    "data": 1
 }
 ```
 

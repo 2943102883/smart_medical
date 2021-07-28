@@ -2,11 +2,11 @@ from django.contrib import admin
 from django.urls import path, include
 from . import views
 from .views import CreateMedical, ShowUserMedical, SearchMedicineView, DeleteMedicineView, SearchMedicineView2, \
-    SearchMedicineView3, ShowMedical, ShowTime, SearchMedicineView4, ShowMedical2, ShowTime2, ImgageView
+    SearchMedicineView3, ShowMedical, ShowTime, SearchMedicineView4, ShowMedical2, ShowTime2, ImgageView, TranslateView
 
 app_name = 'medicine'
 urlpatterns = [
-    path('medical/<str:name>/<str:token>/', CreateMedical.as_view(), name='createmedical'),
+    path('medical/<str:name>/<str:token>/<str:num>/', CreateMedical.as_view(), name='createmedical'),
     path('showmedical/<str:token>/', ShowUserMedical.as_view(), name='showmedical'),
     path('search/<str:name>/', SearchMedicineView.as_view(), name='searchmedicine'),
     path('search2/<str:name>/', SearchMedicineView2.as_view(), name='searchmedicine2'),
@@ -18,4 +18,5 @@ urlpatterns = [
     path('time/<str:token>/', ShowTime.as_view(), name='showtime'),
     path('time2/<str:token>/', ShowTime2.as_view(), name='showtime2'),
     path('imgtest/', ImgageView.as_view(), name='image'),
+    path('translate/', TranslateView.as_view(), name='translate'),
 ]

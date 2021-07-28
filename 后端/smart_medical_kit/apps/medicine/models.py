@@ -28,7 +28,7 @@ class Medicine_self(models.Model):
 
 class Medicine_user(models.Model):
     """用户自己添加的药品
-    阿昔洛韦
+
     """
     name = models.CharField(max_length=200, verbose_name='药品名称')
     category = models.CharField(max_length=200, verbose_name='药品类别', null=True)
@@ -41,10 +41,9 @@ class Medicine_user(models.Model):
     taboo = models.CharField(max_length=200, verbose_name='禁忌', null=True)
     heed = models.CharField(max_length=200, verbose_name='注意事项', null=True)
     savemethod = models.CharField(max_length=200, verbose_name='保存方法', null=True)
+    medicalkit = models.IntegerField(default=1, verbose_name='添加到的药箱位置')
     user = models.ForeignKey(Users, on_delete=models.CASCADE, related_name='medicine',
                              verbose_name='关联用户')  # 后面子表调用父表，用User.medicine就行
-
-    # user = models.CharField(max_length=200, verbose_name='关联用户')
 
     class Meta:
         db_table = 'medicine_user'
@@ -78,6 +77,7 @@ class Medical_loads(models.Model):
     err = models.CharField(max_length=200, verbose_name='禁忌', null=True)
     heed = models.CharField(max_length=1000, verbose_name='注意事项', null=True)
     savemethod = models.CharField(max_length=200, verbose_name='保存方法', null=True)
+    translate = models.IntegerField(verbose_name='收藏标记位', default=0)
     medical = models.ForeignKey(Medicals, on_delete=models.CASCADE, related_name='medical', verbose_name='关联药品')
 
     class Meta:
